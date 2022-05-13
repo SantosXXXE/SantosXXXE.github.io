@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?yzh4a1');
+            src: url('fonts/icomoon.eot?yzh4a1#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?yzh4a1') format('truetype'),
+                url('fonts/icomoon.woff?yzh4a1') format('woff'),
+                url('fonts/icomoon.svg?yzh4a1#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+        div {
+            font-family: 'icomoon';
+            width: 150px;
+            height: 150px;
+            border: 4px rgb(185, 176, 212) solid;
+            box-sizing: border-box;
+            padding: 18px;
+            background-image: linear-gradient(#ffdd35, #ffaf10);
+            border-radius: 75px;
+            transition: border-radius 0.5s;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -75px;
+            margin-left: -75px;
+        }
+
+        div::after {
+            transition: all 0.5s ease;
+            content: '\e908';
+            font-size: 110px;
+            color: rgb(23, 23, 227);
+            background-image: linear-gradient(rgb(129, 109, 240), rgb(46, 35, 208));
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        div:hover {
+            background-image: linear-gradient(rgb(134, 127, 234), rgb(72, 33, 227));
+            border: 8px rgb(255, 157, 0) solid;
+            filter: blur(3px);
+            border-radius: 3px;
+            box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        div:hover::after {
+            /* color: rgb(24, 210, 107); */
+            background-image: linear-gradient(rgb(194, 196, 182), rgb(69, 72, 69));
+            background-clip: text;
+            color: transparent;
+            font-size: 90px;
+            content: '\e906';
+            margin-left: 75px;
+            line-height: 225px;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
