@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.shell {
+    height: 100vh;
+    overflow-x: hidden;
+    perspective: 3px;
+}
+
+.shell div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: 30px;
+    letter-spacing: 2px;
+}
+
+.image1 {
+    transform: translateZ(-1px) scale(1.65);
+    background-size: cover;
+    height: 1200px;
+    z-index: -1;
+}
+
+.image2 {
+    transform: translateZ(-1px) scale(1.34);
+    background-size: cover;
+    height: 1500px;
+    z-index: -1;
+}
+
+.image3 {
+    transform: translateZ(-1px) scale(1.34);
+    background-size: cover;
+    height: 1500px;
+    z-index: -1;
+}
+
+.image4 {
+    transform: translateZ(-1px) scale(1.34);
+    background-size: cover;
+    height: 1700px;
+    z-index: -1;
+
+}
+
+.text {
+    height: 475px;
+    background-color: #fff;
+}
+
+.text h1 {
+    color: #000;
+    font-size: 125px;
+}
+
+.head {
+    z-index: -1;
+    transform: translateY(-30vh) translateZ(1px);
+    color: #fff;
+    font-size: 40px;
+}
+
+.head .one {
+    transform: translateY(-30vh) translateZ(1px);
+    font-size: 100px;
+}
+
+.head .three {
+    transform: translateY(-20vh) translateZ(1px);
+    font-size: 100px;
+}
+
+.head .two {
+    transform: translateY(-35vh) translateZ(1px);
+    font-size: 100px;
+}
+
+.head .four {
+    transform: translateY(5vh) translateZ(1px);
+    font-size: 100px;
+}
