@@ -80,7 +80,7 @@
 }
 
 .head .four {
-    transform: translateY(5vh) translateZ(1px);
+    transform: translateY(-10vh) translateZ(1px);
     font-size: 80px;
 }
 .color {
