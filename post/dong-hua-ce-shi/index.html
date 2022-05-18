@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
-
-<title>动画测试 | Santos个人博客</title>
-<meta name="description" content="Santos个人网站"><!DOCTYPE html>
-<html>
 
 <head>
     <meta charset="utf-8">
 
-    <title>关于 | Santos个人博客</title>
+    <title>动画测试 | Santos个人博客</title>
     <meta name="description" content="Santos个人网站">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="shortcut icon" href="https://santosxxxe.github.io//favicon.ico">
+    <link rel="shortcut icon" href="https://santosxxxe.github.io//favicon.ico?v=1652613345483">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -27,8 +21,62 @@
 
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('icomoon.eot?yzh4a1');
+            src: url('icomoon.eot?yzh4a1#iefix') format('embedded-opentype'),
+                url('icomoon.ttf?yzh4a1') format('truetype'),
+                url('icomoon.woff?yzh4a1') format('woff'),
+                url('icomoon.svg?yzh4a1#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
 
+        .donghua {
+            font-family: 'icomoon';
+            width: 150px;
+            height: 150px;
+            border: 4px rgb(185, 176, 212) solid;
+            box-sizing: border-box;
+            background-image: linear-gradient(#ffdd35, #ffaf10);
+            border-radius: 75px;
+            transition: border-radius 0.5s;
+            margin-left: 80px;
+        }
 
+        .donghua::after {
+            transition: all 0.5s ease;
+            content: '\e908';
+            font-size: 110px;
+            color: rgb(23, 23, 227);
+            background-image: linear-gradient(rgb(129, 109, 240), rgb(46, 35, 208));
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-left: 16px;
+            line-height: 140px;
+        }
+
+        .donghua:hover {
+            background-image: linear-gradient(rgb(134, 127, 234), rgb(72, 33, 227));
+            border: 8px rgb(255, 157, 0) solid;
+            filter: blur(3px);
+            border-radius: 3px;
+            box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .donghua:hover::after {
+            /* color: rgb(24, 210, 107); */
+            background-image: linear-gradient(rgb(194, 196, 182), rgb(69, 72, 69));
+            background-clip: text;
+            color: transparent;
+            font-size: 90px;
+            content: '\e906';
+            margin-left: 85px;
+            line-height: 245px;
+        }
+    </style>
 </head>
 
 <body>
@@ -90,40 +138,39 @@
         <div class="sm-12 md-8 col">
             <div class="paper">
                 <article class="article">
-                    <h1>关于</h1>
+                    <h1>动画过渡效果</h1>
                     <p class="article-meta">
-                        2022-5月-15日
+                        2022-05-15
 
                     </p>
 
                     <div class="post-content">
-                        <blockquote>
-                            <p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-                        </blockquote>
-                        <img src="3.jpg" class="no-responsive avatar" width="200px">
-                        <h2 id="关于本站">🏠 关于本站 </h2>
-                        <p>测试学习内容 分享内容</p>
-                        <h2 id="博主是谁">👨‍💻 博主是谁 </h2>
-                        <p>Santos</p>
-                        <h2 id="兴趣爱好">⛹ 兴趣爱好 </h2>
-                        <p>剪辑 听音乐 玩游戏 写代码</p>
-                        <h2 id="联系我呀">📬 联系我呀 </h2>
-                        <p>微信号x620024484850</p>
-
+                        <p>动画过渡作业</p>
+                        <div class="donghua"></div>
                     </div>
                 </article>
             </div>
             <div class="paper" data-aos="fade-in">
+
+                <div class="next-post">
+                    <div class="next">
+                        下一篇
+                    </div>
+                    <a href="https://santosxxxe.github.io/post/xin-bi-tian-gao/index.html">
+                        <h3 class="post-title">
+                            心比天高
+                        </h3>
+                    </a>
+                </div>
+
             </div>
 
         </div>
 
         <div class="sm-12 md-4 col sidebar">
             <div class="paper info-container">
-                <a href="/post/about/index.html">
-                    <img src="https://santosxxxe.github.io//images/avatar.png" class="no-responsive avatar">
-                    <div class="text-muted">Santos个人网站</div>
-                </a>
+                <img src="https://santosxxxe.github.io//images/avatar.png" class="no-responsive avatar">
+                <div class="text-muted">Santos个人网站</div>
                 <div class="social-container">
 
 
@@ -191,7 +238,7 @@
                 </div>
             </div>
             <div class="paper">
-                Powered by <a href="https://github.com/getgridea/gridea/" target="_blank">Gridea</a> | <a class="rss"
+                Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss"
                     href="https://santosxxxe.github.io//atom.xml" target="_blank">RSS</a>
             </div>
         </div>
@@ -214,208 +261,4 @@
 
 </body>
 
-</html>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://https://santosxxxe.github.io//favicon.ico?v=1652837157360">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://https://santosxxxe.github.io//styles/main.css">
-
-
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
-  </head>
-  <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://https://santosxxxe.github.io/">Santos个人博客</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
-        
-          <li>
-            
-              <a href="/" class="menu">
-                首页
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>动画测试</h1>
-            <p class="article-meta">
-              2022-05-15
-              
-            </p>
-            
-            <div class="post-content">
-              <p>简单的动画过渡</p>
-
-            </div>
-          </article>
-        </div>
-        <div class="paper" data-aos="fade-in">
-          
-            <div class="next-post">
-              <div class="next">
-                下一篇
-              </div>
-              <a href="https://https://santosxxxe.github.io/post/xin-bi-tian-gao/">
-                <h3 class="post-title">
-                  心比天高
-                </h3>
-              </a>
-            </div>
-          
-        </div>
-        
-      </div>
-
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://https://santosxxxe.github.io//images/avatar.png?v=1652837157360" class="no-responsive avatar">
-    <div class="text-muted">Santos个人网站</div>
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://https://santosxxxe.github.io/post/css-shi-xian-gun-lun-wen-zi-fu-dong-xiao-guo/">css实现滚轮文字浮动效果</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://https://santosxxxe.github.io/post/dong-hua-ce-shi/">动画测试</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://https://santosxxxe.github.io/post/xin-bi-tian-gao/">心比天高</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://https://santosxxxe.github.io/post/santos/">Lil peep</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://https://santosxxxe.github.io/post/about/">关于</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://https://santosxxxe.github.io/post/hello-gridea/">Hello Gridea</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://https://santosxxxe.github.io/tag/yf8wd1gsX/" class="badge secondary">
-          Gridea
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://https://santosxxxe.github.io//atom.xml" target="_blank">RSS</a>
-  </div>
-</div>
-
-
-    </div>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script type="application/javascript">
-
-AOS.init();
-
-hljs.initHighlightingOnLoad()
-
-</script>
-
-
-
-
-  </body>
 </html>
