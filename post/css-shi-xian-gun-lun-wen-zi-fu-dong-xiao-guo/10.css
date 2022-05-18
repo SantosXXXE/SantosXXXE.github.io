@@ -58,7 +58,7 @@
 
 .head {
     z-index: -1;
-    transform: translateY(-30vh) translateZ(1px);
+    transform: translateY(-32vh) translateZ(1px);
     color: #fff;
     font-size: 40px;
 }
