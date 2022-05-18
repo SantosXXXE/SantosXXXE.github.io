@@ -51,6 +51,9 @@
     height: 475px;
     background-color: #fff;
 }
+.text:last-child {
+    height:500px;
+}
 
 .text h1 {
     color: #000;
@@ -70,7 +73,7 @@
 }
 
 .head .three {
-    transform: translateY(-20vh) translateZ(1px);
+    transform: translateY(-35vh) translateZ(1px);
     font-size: 100px;
 }
 
