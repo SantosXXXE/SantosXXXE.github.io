@@ -83,3 +83,6 @@
     transform: translateY(5vh) translateZ(1px);
     font-size: 100px;
 }
+.color {
+    color: #000;
+}
