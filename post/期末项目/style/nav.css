@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding-top: 10px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 9px 9px 21px 21px;
+    background: url(../images/图层1.png)
+}
+
+ul li {
+    float: right;
+    margin-left: 10px;
+    padding-right: 40px;
+    width: 120px;
+    height: 45px;
+    list-style: none;
+    /* 一会需要给box 旋转 也需要透视 干脆给li加 里面的子盒子都有透视效果 */
+    perspective: 500px;
+    text-align: center;
+
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.4s;
+    line-height: 40px;
+    font-size: 22px;
+    color: white;
+}
+
+.box-fisrt {
+    float: left;
+    width: 250px;
+    padding-left: 30px;
+}
+
+.front,
+.back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.front {
+    background-image: linear-gradient(rgb(42, 40, 52), rgb(20, 17, 72));
+    z-index: 1;
+    transform: translateZ(22.5px);
+}
+
+.back {
+    background-image: linear-gradient(rgb(235, 235, 236), rgb(218, 217, 232));
+    /* 这个x轴一定是负值 */
+    /* 我们如果有移动 或者其他样式 必须先写我们的移动 */
+    transform: translateY(22.5px) rotateX(-90deg);
+    font-weight: bold;
+}
+
+.back a {
+    color: black;
+}
+
+.box:hover {
+    transform: rotateX(90deg);
+}
