@@ -8,81 +8,115 @@
     <title>Santos个人博客</title>
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/nav.css">
+    <link rel="shortcut icon" href="images/bitbug_favicon.ico">
 </head>
 
 <body>
-    <nav>
-        <div class="nav-div">
-            <ul>
-                <li class="box-fisrt">
-                    <div class="box">
-                        <div class="front">
-                            <p>个人博客</p>
+    <div class="heart">
+        <!-- 导航栏固定定位开始 -->
+        <header class="header-nav">
+            <div class="nav-div">
+                <ul>
+                    <li class="box-fisrt">
+                        <div class="box">
+                            <div class="front">
+                                <p>个人博客</p>
+                            </div>
+                            <div class="back">
+                                <a href="/index.html">个人博客</a>
+                            </div>
                         </div>
-                        <div class="back">
-                            <a href="/index.html">个人博客</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="box">
+                            <div class="front">
+                                <p>关于</p>
+                            </div>
+                            <div class="back">
+                                <a href="/post/about/index.html">关于</a>
+                            </div>
                         </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="box">
+                            <div class="front">
+                                <p>归档</p>
+                            </div>
+                            <div class="back">
+                                <a href="/archives/index.html">归档</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="box">
+                            <div class="front">
+                                <p>标签</p>
+                            </div>
+                            <div class="back">
+                                <a href="/tags/index.html">标签</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="box">
+                            <div class="front">
+                                <p>首页</p>
+                            </div>
+                            <div class="back">
+                                <a href="">首页</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <aside class="aside-left">
+            <div class="aside-tou">
+                <div class="box-front"></div>
+                <div class="box-back">Santos</div>
+                <p>Santos</p>
+                <span class="text-muted text-xs block">
+                    <div id="chakhsu"></div>
+                    <script> var chakhsu = function (r) { function t() { return b[Math.floor(Math.random() * b.length)] } function e() { return String.fromCharCode(94 * Math.random() + 33) } function n(r) { for (var n = document.createDocumentFragment(), i = 0; r > i; i++) { var l = document.createElement("span"); l.textContent = e(), l.style.color = t(), n.appendChild(l) } return n } function i() { var t = o[c.skillI]; c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d) } var l = "", o = ["记录美好生活"].map(function (r) { return r + "" }), a = 2, g = 1, s = 5, d = 75, b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"], c = { text: "", prefixP: -s, skillI: 0, skillP: 0, direction: "forward", delay: a, step: g }; i() }; chakhsu(document.getElementById('chakhsu'));       </script>
+                </span>
+            </div>
+            <nav class="nav-left">
+                <ul>
+                    <li>导航</li>
+                    <li><a href="">首页</a></li>
+                    <li>标签</li>
+                    <li><a href="">分类</a></li>
+                    <li><a href="">页面</a></li>
+                    <li><a href="">链接</a></li>
+                </ul>
+                <div class="nav-footer">
+                    <div class="nav-footer-box">
+                        <li><a href="https://github.com/SantosXXXE/SantosXXXE.github.io/tree/master">管理</a></li>
                     </div>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <div class="box">
-                        <div class="front">
-                            <p>关于</p>
-                        </div>
-                        <div class="back">
-                            <a href="/post/about/index.html">关于</a>
-                        </div>
+                    <div class="nav-footer-box">
+                        <li><a href="https://santosxxxe.github.io/">文章</a></li>
                     </div>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <div class="box">
-                        <div class="front">
-                            <p>归档</p>
-                        </div>
-                        <div class="back">
-                            <a href="/archives/index.html">归档</a>
-                        </div>
+                    <div class="nav-footer-box">
+                        <li><a href="">关于</a></li>
                     </div>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <div class="box">
-                        <div class="front">
-                            <p>标签</p>
-                        </div>
-                        <div class="back">
-                            <a href="/tags/index.html">标签</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <div class="box">
-                        <div class="front">
-                            <p>首页</p>
-                        </div>
-                        <div class="back">
-                            <a href="">首页</a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <section class="touxiang">
-        <div class="box-tou">
-            <div class="box-front"></div>
-            <div class="box-back">Santos</div>
-        </div>
-    </section>
-    <div class="zhaopian">
-        <img src="密客.png" alt="" width="200px">
+                </div>
+            </nav>
+        </aside>
+        <!-- 导航栏固定定位结束 -->
+        <footer>
+            <p>© 2022 Copyright</p>
+            <li><a href="https://beian.miit.gov.cn/#/Integrated/index">2022002709号</a></li>
+            <li class="footer-last"><a href="https://www.beian.gov.cn/portal/index.do">37048102005079号</a></li>
+            <li class="footer-lastone">Powered by Santos | Theme by blog</li>
+        </footer>
     </div>
 </body>
 
