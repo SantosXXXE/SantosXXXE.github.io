@@ -2,12 +2,13 @@ footer {
     position: absolute;
     background-color: rgb(37, 37, 37);
     top: 3000px;
-    left: 392px;
-    height: 52px;
-    width: 70%;
+    left: 385px;
+    height: 54px;
+    width: 69.8%;
     font-size: 10px;
     color: rgb(119, 119, 119);
     line-height: 52px;
+    border-right: 2px solid rgb(21, 21, 21);
 }
 
 footer p {
@@ -42,4 +43,28 @@ footer li a:first-child:before {
     float: right;
     margin-right: 20px;
     font-size: 13px;
+}
+
+main {
+    padding-top: 55px;
+    margin-left: 18.1%;
+    width: 82.3%;
+    height: 2945px;
+    border-right: 2px solid rgb(21, 21, 21);
+}
+
+.main-box {
+    float: left;
+    background-color: rgb(33, 33, 33);
+    /* border-top: 3px solid rgb(25, 25, 25); */
+    height: 100%;
+    width: 75.5%;
+}
+
+.aside-right {
+    float: left;
+    background-color: rgb(33, 33, 33);
+    /* border-top: 3px solid rgb(25, 25, 25); */
+    height: 100%;
+    width: 24.5%;
 }
