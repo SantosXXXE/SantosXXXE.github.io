@@ -88,25 +88,28 @@ body {
 }
 
 .heart {
-    padding-left: 7.8%;
+    padding-left: 7.4%;
     padding-right: 7.8%;
     height: 100%;
+
 }
 
 /* 导航栏开始 */
 .header-nav {
     position: fixed;
-    right: 120px;
+    right: 125px;
     width: 85%;
     height: 55px;
-    border: 2px solid rgb(25, 25, 25);
     background-color: rgb(33, 33, 33);
+    border-bottom: 2px solid rgb(21, 21, 21);
+    border-right: 2px solid rgb(21, 21, 21);
+    border-left: 2px solid rgb(21, 21, 21);
 }
 
 .nav-div ul li {
     float: right;
     margin-top: 10px;
-    margin-right: 25px;
+    margin-right: 15px;
     width: 55px;
     height: 30px;
     list-style: none;
@@ -166,10 +169,11 @@ body {
 /* 侧边栏开始 */
 .aside-left {
     position: fixed;
-    top: 60px;
+    top: 57.5px;
     background-color: rgb(33, 33, 33);
     width: 15.3%;
     height: 100%;
+    border-left: 2px solid rgb(21, 21, 21);
 }
 
 .aside-tou {
