@@ -1,11 +1,11 @@
 /* 动画效果 */
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?yzh4a1');
-    src: url('../fonts/icomoon.eot?yzh4a1#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?yzh4a1') format('truetype'),
-        url('../fonts/icomoon.woff?yzh4a1') format('woff'),
-        url('../fonts/icomoon.svg?yzh4a1#icomoon') format('svg');
+    src: url('fonts/icomoon.eot?yzh4a1');
+    src: url('fonts/icomoon.eot?yzh4a1#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?yzh4a1') format('truetype'),
+        url('fonts/icomoon.woff?yzh4a1') format('woff'),
+        url('fonts/icomoon.svg?yzh4a1#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
