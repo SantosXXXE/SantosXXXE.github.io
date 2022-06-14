@@ -1,11 +1,11 @@
 /* 动画效果 */
 @font-face {
     font-family: 'icomoon';
-    src: url('fonts/icomoon.eot?yzh4a1');
-    src: url('fonts/icomoon.eot?yzh4a1#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?yzh4a1') format('truetype'),
-        url('fonts/icomoon.woff?yzh4a1') format('woff'),
-        url('fonts/icomoon.svg?yzh4a1#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?yzh4a1');
+    src: url('../fonts/icomoon.eot?yzh4a1#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?yzh4a1') format('truetype'),
+        url('../fonts/icomoon.woff?yzh4a1') format('woff'),
+        url('../fonts/icomoon.svg?yzh4a1#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -91,7 +91,6 @@ body {
     padding-left: 7.4%;
     padding-right: 7.8%;
     height: 100%;
-
 }
 
 /* 导航栏开始 */
@@ -104,12 +103,13 @@ body {
     border-bottom: 2px solid rgb(21, 21, 21);
     border-right: 2px solid rgb(21, 21, 21);
     border-left: 2px solid rgb(21, 21, 21);
+    z-index: 1;
 }
 
 .nav-div ul li {
     float: right;
-    margin-top: 10px;
-    margin-right: 15px;
+    margin-top: 14px;
+    margin-right: 25px;
     width: 55px;
     height: 30px;
     list-style: none;
@@ -129,9 +129,23 @@ body {
 }
 
 .nav-div .box-fisrt {
+    margin-top: 12px;
     float: left;
     width: 190px;
-    padding-left: 34px;
+    padding-left: 35px;
+}
+
+.nav-div .box-fisrt .back {
+    background-image: linear-gradient(rgb(30, 30, 30), rgb(25, 25, 25));
+}
+
+.nav-div .box-fisrt .back a {
+    color: rgb(119, 119, 119);
+}
+
+.nav-div .box-fisrt .front {
+    background-image: linear-gradient(rgb(119, 119, 119), rgb(87, 87, 87));
+    color: rgb(33, 33, 33);
 }
 
 .front,
@@ -141,29 +155,32 @@ body {
     top: 0;
     height: 100%;
     width: 100%;
+    font-size: 22px;
 }
 
 .front {
-    background-image: linear-gradient(rgb(175, 175, 175), rgb(210, 210, 210));
+    background-color: rgb(33, 33, 33);
     z-index: 1;
-    transform: translateZ(15px);
-    animation: small-light 8s ease infinite;
+    transform: translateZ(20px);
+    color: rgb(119, 119, 119);
 }
 
 .back {
-    background-image: linear-gradient(rgb(69, 39, 219), rgb(25, 19, 139));
-    transform: translateY(15px) rotateX(-90deg);
+    /* background-image: linear-gradient(rgb(32, 32, 32), rgb(25, 25, 25)); */
+    background-image: linear-gradient(rgb(119, 119, 119), rgb(87, 87, 87));
+    transform: translateY(20px) rotateX(-270deg);
     font-weight: bold;
-    animation: small-light 8s ease infinite;
+    /* animation: small-light 8s ease infinite; */
+    font-size: 18px;
 }
 
 .back a {
-    color: rgb(235, 235, 235);
+    color: rgb(33, 33, 33);
     text-decoration: none;
 }
 
 .box:hover {
-    transform: rotateX(90deg);
+    transform: rotateX(270deg);
 }
 
 /* 侧边栏开始 */
