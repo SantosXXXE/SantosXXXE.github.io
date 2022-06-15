@@ -1,92 +1,4 @@
-/* .paper-text {
-    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.35);
-    -moz-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.35);
-}
-
-.paper-text:hover {
-    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.35);
-    -moz-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.35);
-} */
-/* img:hover {
-    -webkit-animation: sucaijiayuan 1s .1s ease both;
-    -moz-animation: tada 1s .1s ease both;
-}
-
-@-webkit-keyframes sucaijiayuan {
-    0% {
-        -webkit-transform: scale(1)
-    }
-
-    10%,
-    20% {
-        -webkit-transform: scale(0.8) rotate(-2deg)
-    }
-
-    30%,
-    50%,
-    70%,
-    90% {
-        -webkit-transform: scale(1.1) rotate(2deg)
-    }
-
-    40%,
-    60%,
-    80% {
-        -webkit-transform: scale(1.1) rotate(-2deg)
-    }
-
-    100% {
-        -webkit-transform: scale(1) rotate(0)
-    }
-} */
-
-footer {
-    position: absolute;
-    background-color: rgb(37, 37, 37);
-    top: 3720px;
-    left: 386px;
-    height: 54px;
-    width: 69.8%;
-    font-size: 10px;
-    color: rgb(119, 119, 119);
-    line-height: 52px;
-    border-right: 2px solid rgb(21, 21, 21);
-}
-
-footer p {
-    float: left;
-    margin-left: 30px;
-}
-
-footer li {
-    margin-left: 10px;
-    float: left;
-    list-style: none;
-}
-
-footer li a {
-    text-decoration: none;
-    color: rgb(119, 119, 119);
-    background-color: rgb(255, 166, 0);
-}
-
-footer li a:first-child:before {
-    background-color: gray;
-    margin-right: 3px;
-    color: black;
-    content: '粤ICP备';
-}
-
-.footer-last a:first-child::before {
-    content: '粤公安网备';
-}
-
-.footer-lastone {
-    float: right;
-    margin-right: 20px;
-    font-size: 13px;
-}
-
+/* 主要内容开始 */
 main {
     padding-top: 55px;
     margin-left: 18.1%;
@@ -94,6 +6,7 @@ main {
     border-right: 2px solid rgb(21, 21, 21);
 }
 
+/* 主要内容导航栏开始 */
 .main-box {
     float: left;
     background-color: rgb(25, 25, 25);
@@ -119,6 +32,7 @@ main {
     font-size: 14px;
 }
 
+/* 主要文章内容开始 */
 .main-paper {
     background-color: rgb(25, 25, 25);
     margin: 20px 20px 20px 20px;
@@ -153,6 +67,7 @@ main {
     transform: scale(1.3);
 }
 
+/* 文章主体开始 */
 .paper-article {
     background-color: rgb(32, 32, 32);
     width: 100%;
@@ -162,6 +77,10 @@ main {
     box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.35);
     margin-bottom: 30px;
+}
+
+.paper-article a {
+    text-decoration: none;
 }
 
 .paper-article:not(article) {
@@ -200,15 +119,16 @@ main {
     color: rgb(158, 158, 158);
 }
 
+/* 右侧边栏开始 */
 .aside-right {
     float: left;
     background-color: rgb(255, 0, 0);
     background-color: rgb(33, 33, 33);
-    /* border-top: 3px solid rgb(25, 25, 25); */
-    height: 3680px;
+    height: 2680px;
     width: 22.5%;
 }
 
+/* 右侧边栏图标制作开始 */
 .aside-icomoon {
     text-align: center;
     line-height: 58px;
@@ -217,26 +137,21 @@ main {
 .aside-icomoon ul li:nth-child(n+4) {
     float: left;
     list-style: none;
-    /* background-color: blue; */
-    /* margin-top: 20px; */
     height: 58px;
     width: 33.33%;
-    /* border-bottom: 2px solid rgb(25, 25, 25); */
     transition: all 0.7s;
 }
 
-.li-box-front {
+.icomoon-box {
     float: left;
     list-style: none;
-    /* background-color: blue; */
     margin-top: 3px;
     height: 40px;
     width: 33.33%;
     transition: all 0.4s;
 }
 
-.li-box-front .box {
-    /* position: relative; */
+.icomoon-box .box {
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
@@ -278,12 +193,12 @@ main {
     font-size: 24px;
 }
 
+/* 右侧边栏简洁文章开始 */
 .aside-right-main {
     margin-top: 100px;
 }
 
 .aside-article {
-    /* background-color: black; */
     width: 100%;
     height: 400px;
     color: rgb(119, 119, 119);
@@ -296,7 +211,6 @@ main {
 }
 
 .aside-article div {
-    /* background-color: blue; */
     width: 100%;
     height: 50px;
     margin-top: 15px;
@@ -323,8 +237,8 @@ main {
     font-size: 14px;
 }
 
+/* 右侧边栏博客信息开始 */
 .aside-information {
-    /* background-color: black; */
     width: 100%;
     height: 250px;
 }
@@ -350,7 +264,7 @@ main {
 
 .aside-information ul li:nth-child(1) {
     border: none;
-    border-radius: 6px 6px 0 0;
+    border-radius: 8px 8px 0 0;
 }
 
 .aside-information ul li:nth-child(2) {
@@ -359,26 +273,18 @@ main {
 }
 
 .aside-information ul li:nth-child(3) {
-    border-radius: 0 0 6px 6px;
+    border-bottom: 1px solid rgb(22, 22, 22);
+}
+
+.aside-information ul li:nth-child(4) {
     border: none;
+    border-radius: 0 0 8px 8px;
 }
 
 .aside-information ul li:nth-child(n)::after {
     font-size: 12px;
     float: right;
     margin-right: 20px;
-}
-
-.aside-information ul li:nth-child(1)::after {
-    content: '5';
-}
-
-.aside-information ul li:nth-child(2)::after {
-    content: '6';
-}
-
-.aside-information ul li:nth-child(3)::after {
-    content: 'Today';
 }
 
 .aside-information ul li:nth-child(n)::before {
@@ -400,4 +306,73 @@ main {
 .aside-information ul li:nth-child(3)::before {
     font-family: 'icomoon';
     content: '\e903';
+}
+
+.aside-information ul li:nth-child(4)::before {
+    font-family: 'icomoon';
+    content: '\e901';
+}
+
+.aside-information ul li:nth-child(1)::after {
+    content: '5';
+}
+
+.aside-information ul li:nth-child(2)::after {
+    content: '7';
+}
+
+.aside-information ul li:nth-child(3)::after {
+    content: 'Today';
+}
+
+.aside-information ul li:nth-child(4)::after {
+    content: '1084';
+}
+
+/* 尾部模块制作开始 */
+footer {
+    position: absolute;
+    background-color: rgb(37, 37, 37);
+    top: 2720px;
+    left: 386px;
+    height: 54px;
+    width: 69.8%;
+    font-size: 10px;
+    color: rgb(119, 119, 119);
+    line-height: 52px;
+    border-right: 2px solid rgb(21, 21, 21);
+}
+
+footer p {
+    float: left;
+    margin-left: 30px;
+}
+
+footer li {
+    margin-left: 10px;
+    float: left;
+    list-style: none;
+}
+
+footer li a {
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+    background-color: rgb(255, 166, 0);
+}
+
+footer li a:first-child:before {
+    background-color: gray;
+    margin-right: 3px;
+    color: black;
+    content: '粤ICP备';
+}
+
+.footer-last a:first-child::before {
+    content: '粤公安网备';
+}
+
+.footer-lastone {
+    float: right;
+    margin-right: 20px;
+    font-size: 13px;
 }
