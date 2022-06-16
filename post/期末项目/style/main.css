@@ -1,9 +1,464 @@
+/* 动画效果 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?yzh4a1');
+    src: url('../fonts/icomoon.eot?yzh4a1#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?yzh4a1') format('truetype'),
+        url('../fonts/icomoon.woff?yzh4a1') format('woff'),
+        url('../fonts/icomoon.svg?yzh4a1#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+@keyframes color {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: rgb(255, 106, 0);
+    }
+
+    50% {
+        color: rgb(0, 255, 0);
+    }
+
+    75% {
+        color: rgb(255, 255, 0);
+    }
+
+    100% {
+        color: rgb(255, 0, 0);
+    }
+}
+
+@keyframes light {
+    0% {
+        box-shadow: 0 0 4px #f00;
+    }
+
+    25% {
+        box-shadow: 0 0 16px #0f0;
+    }
+
+    50% {
+        box-shadow: 0 0 4px #00f;
+    }
+
+    75% {
+        box-shadow: 0 0 16px #0f0;
+    }
+
+    100% {
+        box-shadow: 0 0 4px #f00;
+    }
+}
+
+@keyframes small-light {
+    0% {
+        box-shadow: 0 0 5px #0f0;
+    }
+
+    25% {
+        box-shadow: 0 0 8px #f00;
+    }
+
+    50% {
+        box-shadow: 0 0 5px #00f;
+    }
+
+    75% {
+        box-shadow: 0 0 8px #0f0;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #00f;
+    }
+}
+
+/* 布局开始 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(25, 25, 25);
+}
+
+.heart {
+    padding-left: 7.4%;
+    padding-right: 7.8%;
+    height: 100%;
+}
+
+.top {
+    position: absolute;
+    left: 1485px;
+    top: 700px;
+    background: url(../images/wurenji.png);
+    background-size: 60px;
+    border: none;
+    border-radius: 12px;
+    height: 60px;
+    width: 60px;
+    animation: small-light 8s ease infinite;
+    transition: all 0.4s;
+}
+
+.top:hover {
+    transform: scale(1.1);
+}
+
+/* 导航栏开始 */
+.header-nav {
+    position: fixed;
+    right: 125px;
+    width: 85%;
+    height: 55px;
+    background-color: rgb(33, 33, 33);
+    border-bottom: 2px solid rgb(21, 21, 21);
+    border-right: 2px solid rgb(21, 21, 21);
+    border-left: 2px solid rgb(21, 21, 21);
+    z-index: 1;
+}
+
+.nav-div ul li {
+    float: right;
+    margin-top: 14px;
+    margin-right: 25px;
+    width: 55px;
+    height: 30px;
+    list-style: none;
+    text-align: center;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.4s;
+    line-height: 30px;
+    font-size: 17px;
+    color: rgb(33, 33, 33);
+    font-weight: bold;
+}
+
+.nav-div .box-fisrt {
+    margin-top: 12px;
+    float: left;
+    width: 190px;
+    padding-left: 35px;
+}
+
+.box-fisrt .back {
+    background-image: linear-gradient(rgb(27, 27, 27), rgb(25, 25, 25));
+    background-color: rgb(33, 33, 33);
+    transform: translateY(20px) rotateX(-90deg);
+}
+
+.box-fisrt .back a {
+    color: rgb(119, 119, 119);
+}
+
+.box-fisrt .front {
+    background-image: linear-gradient(rgb(119, 119, 119), rgb(87, 87, 87));
+    color: rgb(33, 33, 33);
+    font-size: 17px;
+}
+
+.box-fisrt .box:hover {
+    transform: rotateX(90deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 22px;
+}
+
+.front {
+    background-color: rgb(33, 33, 33);
+    z-index: 1;
+    transform: translateZ(20px);
+    color: rgb(119, 119, 119);
+}
+
+.back {
+    background-image: linear-gradient(rgb(119, 119, 119), rgb(87, 87, 87));
+    transform: translateY(20px) rotateX(-270deg);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.back a {
+    color: rgb(33, 33, 33);
+    text-decoration: none;
+}
+
+.box:hover {
+    transform: rotateX(-90deg);
+}
+
+/* 侧边栏开始 */
+.aside-left {
+    position: fixed;
+    top: 57.5px;
+    background-color: rgb(33, 33, 33);
+    width: 15.3%;
+    height: 100%;
+    border-left: 2px solid rgb(21, 21, 21);
+}
+
+.aside-tou {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    transition: all .4s;
+    transform-style: preserve-3d;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.aside-left-text {
+    text-align: center;
+    margin-top: -5px;
+    padding-bottom: 20px;
+}
+
+.aside-left-text span {
+    font-size: 12px;
+    color: rgb(119, 119, 119);
+}
+
+.aside-left-text p {
+    font-size: 18px;
+    color: rgb(119, 119, 119);
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.aside-tou:hover {
+    transform: rotateY(180deg);
+}
+
+.box-front,
+.box-back {
+    position: absolute;
+    top: 20;
+    left: 0;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    font-size: 25px;
+    line-height: 130px;
+    color: #fff;
+    backface-visibility: hidden;
+}
+
+.box-front {
+    background: url(../images/wurenji.png);
+    background-size: 145px;
+    background-position: -7px 1px;
+    z-index: 1;
+    animation: light 5s linear infinite;
+}
+
+.box-back {
+    position: relative;
+    font-family: 'icomoon';
+    background-image: linear-gradient(rgb(140, 122, 241), rgb(42, 30, 207));
+    transform: rotateY(180deg);
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    animation: color 4s linear infinite, light 5s linear infinite;
+}
+
+.box-back::after {
+    position: absolute;
+    right: 20px;
+    content: '\e912';
+    z-index: -1;
+    font-size: 90px;
+    color: white;
+}
+
+/* 侧边栏小功能开始 */
+.nav-left {
+    border-top: 2px solid rgb(37, 37, 37);
+}
+
+.nav-left ul li {
+    list-style: none;
+    color: rgb(119, 119, 119);
+    font-size: 13.5px;
+    padding-left: 15px;
+    background-color: rgb(33, 33, 33);
+    height: 40px;
+    line-height: 35px;
+    transition: all 0.7s;
+    font-family: 'icomoon';
+    box-sizing: border-box;
+}
+
+.nav-left ul li:nth-child(2) {
+    border-bottom: 2px solid rgb(37, 37, 37);
+}
+
+.nav-left ul li:nth-child(2):hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.nav-left ul li:nth-child(n+4):hover {
+    background-color: rgb(41, 41, 41);
+}
+
+.nav-left ul li:nth-child(2)::before {
+    content: '\e90c';
+    font-family: 'icomoon';
+    font-size: 15px;
+    color: rgb(82, 45, 246);
+    padding-left: 15px;
+}
+
+.nav-left ul li:nth-child(n+3)::before {
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.nav-left ul li:nth-child(4)::before {
+    content: '\e9bd';
+    color: rgb(151, 209, 233);
+    line-height: 30px;
+}
+
+.nav-left ul li:nth-child(5)::before {
+    content: '\e924';
+    color: rgb(148, 159, 239);
+    line-height: 30px;
+}
+
+.nav-left ul li:nth-child(6)::before {
+    content: '\e919';
+    color: rgb(59, 75, 197);
+    line-height: 30px;
+}
+
+.nav-left ul li:nth-child(n+4)::after {
+    content: '\ea50';
+    color: rgb(119, 119, 119);
+    font-size: 20px;
+    margin-left: 130px;
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+    font-size: 15px;
+    transition: color 0.4s;
+    margin-left: 10px;
+}
+
+.nav-left ul li:nth-child(2):hover a {
+    color: rgb(82, 45, 246);
+}
+
+.nav-left ul li:nth-child(4):hover a {
+    color: rgb(151, 209, 233);
+}
+
+.nav-left ul li:nth-child(5):hover a {
+    color: rgb(148, 159, 239);
+}
+
+.nav-left ul li:nth-child(6):hover a {
+    color: rgb(59, 75, 197);
+}
+
+/* .nav-footer开始 */
+.nav-footer {
+    height: 50px;
+    margin-top: 370px;
+}
+
+.nav-footer-box {
+    float: left;
+    height: 50px;
+    width: 33.3%;
+    text-align: center;
+    padding-top: 7px;
+    background-color: rgb(37, 37, 37);
+    transition: all 0.4s;
+}
+
+.nav-footer-box li {
+    list-style: none;
+    font-size: 13.5px;
+}
+
+.nav-footer-box li a {
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+}
+
+.nav-footer-box::before {
+    font-size: 13.5px;
+    font-family: 'icomoon';
+    content: '\e992';
+    color: rgb(119, 119, 119);
+
+}
+
+.nav-footer-box:nth-child(2):before {
+    content: '\e924';
+}
+
+.nav-footer-box:nth-child(3):before {
+    content: '\e906';
+}
+
+.nav-footer-box:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+/* 滚动条开始 */
+::-webkit-scrollbar {
+    width: 9px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: rgb(65, 62, 62);
+}
+
 /* 主要内容开始 */
 main {
     padding-top: 55px;
     margin-left: 18.1%;
     width: 82.3%;
     border-right: 2px solid rgb(21, 21, 21);
+    height: 2720px;
 }
 
 /* 主要内容导航栏开始 */
@@ -32,39 +487,129 @@ main {
     font-size: 14px;
 }
 
+.main-header ul {
+    padding-left: 260px;
+    padding-top: 5px;
+}
+
+.main-header ul li {
+    list-style: none;
+    float: left;
+    color: rgb(119, 119, 119);
+    margin-left: 30px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.main-header ul li::before {
+    margin-right: 10px;
+}
+
+.main-header ul li:nth-child(1):before {
+    content: '\e971';
+    font-family: 'icomoon';
+}
+
+
+.main-header ul li:nth-child(2):before {
+    content: '\e94e';
+    font-family: 'icomoon';
+}
+
+.main-header ul li:nth-child(3):before {
+    content: '\e92e';
+    font-family: 'icomoon';
+}
+
 /* 主要文章内容开始 */
 .main-paper {
+    position: relative;
     background-color: rgb(25, 25, 25);
     margin: 20px 20px 20px 20px;
 }
 
-.main-paper ul {
-    margin-top: 80px;
-    margin-left: 325px;
+.paper-footer ul {
+    position: absolute;
+    top: 2445px;
+    left: 350px;
 }
 
-.main-paper ul li {
+.paper-footer ul li {
     float: left;
-    width: 25px;
-    height: 25px;
-    border: 3px solid rgb(21, 21, 21);
-    margin: 5px;
+    width: 23px;
+    height: 23px;
+    border: 2px solid rgb(21, 21, 21);
     text-align: center;
-    line-height: 25px;
+    line-height: 21px;
     list-style: none;
-    border-radius: 50%;
     cursor: pointer;
     transition: all 0.2s;
+    background-color: rgb(33, 33, 33);
+    color: rgb(150, 150, 150);
 }
 
-.main-paper ul li a {
+.paper-footer ul li:first-child a {
+    color: rgb(210, 210, 210);
+}
+
+.paper-footer ul li:first-child {
+    background-color: rgb(37, 37, 37);
+}
+
+.paper-footer ul li a {
     text-decoration: none;
-    color: rgb(120, 120, 120);
-    font-size: 14px;
+    color: rgb(150, 150, 150);
+    font-size: 10px;
+    font-weight: 500;
 }
 
-.main-paper ul li:hover {
-    transform: scale(1.3);
+.paper-footer ul li:hover {
+    transform: scale(1.4);
+}
+
+.main-paper .paper-header {
+    width: 100%;
+    height: 35px;
+    background-color: rgb(32, 32, 32);
+    margin-bottom: 20px;
+    line-height: 35px;
+}
+
+.paper-header ul:first-child {
+    float: left;
+    padding-left: 15px;
+}
+
+.paper-header ul:last-child {
+    float: right;
+    padding-right: 15px;
+}
+
+.paper-header ul a {
+    color: rgb(119, 119, 119);
+    list-style: none;
+    float: left;
+    margin-left: 5px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.paper-header ul:first-child a:first-child::before {
+    font-family: 'icomoon';
+    content: '\e90c';
+    margin-right: 5px;
+}
+
+.paper-header ul:last-child a:first-child::after {
+    font-family: 'icomoon';
+    content: '\e933';
+    margin-left: 5px;
+}
+
+.paper-header ul:last-child a:last-child::after {
+    font-family: 'icomoon';
+    content: '\e90e';
+    margin-left: 5px;
 }
 
 /* 文章主体开始 */
@@ -93,10 +638,11 @@ main {
 }
 
 .paper-img {
-    background: url(../images/图层1.png);
+    background: url(../images/blog.png) no-repeat;
     background-color: blue;
     width: 100%;
     height: 300px;
+    background-size: 885px;
     border: none;
     border-radius: 12px 12px 0px 0px;
     transition: all 0.4s;
@@ -124,31 +670,20 @@ main {
     float: left;
     background-color: rgb(255, 0, 0);
     background-color: rgb(33, 33, 33);
-    height: 2680px;
+    height: 2665px;
     width: 22.5%;
 }
 
 /* 右侧边栏图标制作开始 */
-.aside-icomoon {
-    text-align: center;
-    line-height: 58px;
-}
-
-.aside-icomoon ul li:nth-child(n+4) {
-    float: left;
-    list-style: none;
-    height: 58px;
-    width: 33.33%;
-    transition: all 0.7s;
-}
-
 .icomoon-box {
     float: left;
     list-style: none;
     margin-top: 3px;
-    height: 40px;
+    height: 47px;
     width: 33.33%;
     transition: all 0.4s;
+    text-align: center;
+    line-height: 47px;
 }
 
 .icomoon-box .box {
@@ -162,42 +697,79 @@ main {
     font-weight: bold;
 }
 
-.aside-icomoon ul li:nth-child(n+4):hover {
-    border-bottom: 2px solid skyblue;
-    background-color: rgb(41, 41, 41);
+/* 将ul相对定位，目的是让内容的div绝对定位时相对ul定位，否则会相对body定位 */
+/* ul弹性盒，目的是让li横着排，也可以将li浮动或者转行内块 */
+.icomoon-input {
+    width: 100%;
+    height: 550px;
 }
 
-.aside-icomoon ul li:nth-child(n+4):hover:after {
-    color: rgb(255, 255, 255);
+.icomoon-input ul {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
 }
 
-.aside-icomoon ul li:nth-child(n+4):after {
+/* 将三个li宽度平分，高度60px */
+.icomoon-input li {
+    flex: 1;
+    height: 50px;
+    list-style: none;
+}
+
+/* input隐藏 */
+.icomoon-input input {
+    display: none;
+}
+
+/* 设置input的下一个节点label的样式 */
+.icomoon-input input+label {
+    display: block;
+    width: 88px;
+    height: 50px;
+    background: #ccc;
+}
+
+.icomoon-input input+label::after {
     font-family: 'icomoon';
+    font-size: 40px;
+    line-height: 50px;
+    margin-left: 25px;
+}
+
+.icomoon-input li:nth-child(1) label::after {
     content: '\e907';
-    color: rgb(163, 0, 0);
-    font-size: 20px;
-    transition: all 0.7s;
 }
 
-.aside-icomoon ul li:nth-child(5):after {
-    font-family: 'icomoon';
+.icomoon-input li:nth-child(2) label::after {
     content: '\e917';
-    color: rgb(189, 85, 127);
-    font-size: 25px;
 }
 
-.aside-icomoon ul li:nth-child(6):after {
-    font-family: 'icomoon';
-    content: '\e971';
-    color: rgb(25, 25, 25);
-    font-size: 24px;
+.icomoon-input li:nth-child(3) label::after {
+    content: '\e932';
+}
+
+/* 设置div内容的基础样式 隐藏内容div*/
+.icomoon-input input+label+div {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+
+/* input选中状态时候对应的label的样式 */
+.icomoon-input input:checked+label {
+    background: #333333;
+    color: #fff;
+}
+
+/* input选中时候显示对应的div */
+.icomoon-input input:checked+label+div {
+    display: block;
 }
 
 /* 右侧边栏简洁文章开始 */
-.aside-right-main {
-    margin-top: 100px;
-}
-
 .aside-article {
     width: 100%;
     height: 400px;
@@ -205,7 +777,6 @@ main {
 }
 
 .aside-article h2 {
-    padding-top: 3px;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -326,14 +897,14 @@ main {
 }
 
 .aside-information ul li:nth-child(4)::after {
-    content: '1084';
+    content: '1064';
 }
 
 /* 尾部模块制作开始 */
 footer {
     position: absolute;
     background-color: rgb(37, 37, 37);
-    top: 2720px;
+    top: 2722px;
     left: 386px;
     height: 54px;
     width: 69.8%;
