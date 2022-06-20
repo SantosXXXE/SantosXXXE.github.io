@@ -186,13 +186,13 @@ body {
 .front {
     background-color: rgb(33, 33, 33);
     z-index: 1;
-    transform: translateZ(20px);
+    transform: translateZ(23.5px);
     color: rgb(119, 119, 119);
 }
 
 .back {
     background-image: linear-gradient(rgb(119, 119, 119), rgb(87, 87, 87));
-    transform: translateY(20px) rotateX(-270deg);
+    transform: translateY(23.5px) rotateX(-270deg);
     font-weight: bold;
     font-size: 18px;
 }
@@ -466,6 +466,7 @@ main {
     float: left;
     background-color: rgb(25, 25, 25);
     width: 77.5%;
+    height: 100%;
 }
 
 .main-header {
@@ -529,22 +530,25 @@ main {
 }
 
 .paper-footer ul {
-    position: absolute;
-    top: 2445px;
-    left: 350px;
+    width: 189px;
+    height: 27px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(33, 33, 33);
+    margin-left: 340px;
+    margin-top: 75px;
 }
 
 .paper-footer ul li {
     float: left;
-    width: 23px;
-    height: 23px;
-    border: 2px solid rgb(21, 21, 21);
+    width: 27px;
+    height: 27px;
+    /* border: 1px solid rgb(21, 21, 21); */
     text-align: center;
-    line-height: 21px;
+    line-height: 27px;
     list-style: none;
     cursor: pointer;
     transition: all 0.2s;
-    background-color: rgb(33, 33, 33);
     color: rgb(150, 150, 150);
 }
 
@@ -553,7 +557,9 @@ main {
 }
 
 .paper-footer ul li:first-child {
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(55, 55, 55);
+    border: none;
+    border-radius: 4px 0 0 4px;
 }
 
 .paper-footer ul li a {
@@ -670,7 +676,7 @@ main {
     float: left;
     background-color: rgb(255, 0, 0);
     background-color: rgb(33, 33, 33);
-    height: 2665px;
+    height: 2667px;
     width: 22.5%;
 }
 
@@ -683,7 +689,6 @@ main {
     width: 33.33%;
     transition: all 0.4s;
     text-align: center;
-    line-height: 47px;
 }
 
 .icomoon-box .box {
@@ -691,10 +696,13 @@ main {
     height: 100%;
     transform-style: preserve-3d;
     transition: all 0.4s;
-    line-height: 40px;
-    font-size: 17px;
+    line-height: 47px;
     color: rgb(33, 33, 33);
     font-weight: bold;
+}
+
+.icomoon-box a {
+    font-size: 22px;
 }
 
 /* 将ul相对定位，目的是让内容的div绝对定位时相对ul定位，否则会相对body定位 */
@@ -728,7 +736,29 @@ main {
     display: block;
     width: 88px;
     height: 50px;
-    background: #ccc;
+    background-color: rgb(33, 33, 33);
+    color: rgb(22, 22, 22);
+    transition: all 0.7s;
+}
+
+/* 设置div内容的基础样式 隐藏内容div*/
+.icomoon-input input+label+div {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 80px;
+}
+
+/* input选中状态时候对应的label的样式 */
+.icomoon-input input:checked+label {
+    background-color: rgb(25, 25, 25);
+    color: rgb(222, 42, 42);
+    border-bottom: 3px solid rgb(62, 138, 247);
+}
+
+/* input选中时候显示对应的div */
+.icomoon-input input:checked+label+div {
+    display: block;
 }
 
 .icomoon-input input+label::after {
@@ -744,29 +774,121 @@ main {
 
 .icomoon-input li:nth-child(2) label::after {
     content: '\e917';
+    font-size: 50px;
+    margin-left: 20px;
 }
 
 .icomoon-input li:nth-child(3) label::after {
     content: '\e932';
 }
 
-/* 设置div内容的基础样式 隐藏内容div*/
-.icomoon-input input+label+div {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 80px;
+.icomoon-input .aside-about {
+    margin-left: 13px;
+    margin-right: 10px;
 }
 
-/* input选中状态时候对应的label的样式 */
-.icomoon-input input:checked+label {
-    background: #333333;
-    color: #fff;
+.icomoon-input .aside-tou {
+    margin-top: 0px;
+    margin-left: 55px;
+    transform: scale(0.9);
 }
 
-/* input选中时候显示对应的div */
-.icomoon-input input:checked+label+div {
-    display: block;
+.icomoon-input .about-text {
+    color: rgb(145, 145, 145);
+    font-size: 14px;
+    height: 100%;
+    overflow: hidden;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.icomoon-input .aside-about span {
+    color: rgb(119, 119, 119);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.about-text-fisrt p {
+    font-weight: bold;
+    color: rgb(190, 190, 190);
+}
+
+.about-text:nth-child(4) {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.icomoon-input .aside-about span:last-child {
+    color: rgb(222, 42, 42);
+}
+
+.about-text p:nth-child(6) {
+    color: rgb(36, 217, 115);
+}
+
+.about-text p:nth-child(5) {
+    color: rgb(106, 59, 215);
+}
+
+.about-text p:nth-child(4) {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.about-text p:nth-child(3) {
+    color: rgb(57, 54, 206);
+}
+
+.about-text p:nth-child(2) {
+    color: rgb(115, 161, 189);
+}
+
+.about-text p:nth-child(1) {
+    color: rgb(213, 119, 60);
+}
+
+.side-article .aside-tag {
+    width: 100%;
+    height: 450px;
+}
+
+.aside-tag h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 22px;
+    color: rgb(119, 119, 119);
+}
+
+.aside-tag ul {
+    /* background-color: red; */
+    text-align: center;
+    width: 100%;
+    margin-left: 5px;
+}
+
+.aside-tag ul li {
+    background-image: linear-gradient(rgb(77, 50, 230), rgb(55, 42, 232));
+    border-radius: 5px;
+    border: none;
+    color: rgb(33, 33, 33);
+    text-align: center;
+    line-height: 30px;
+    border-right: 1px solid black;
+    font-weight: bold;
+    width: fit-content;
+    height: 30px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.aside-tag ul li:first-child {
+    background-image: linear-gradient(rgb(186, 65, 8), rgb(166, 11, 11));
+}
+
+.aside-tag ul li:nth-child(3) {
+    background-image: linear-gradient(rgb(46, 200, 110), rgb(35, 121, 214));
 }
 
 /* 右侧边栏简洁文章开始 */
@@ -885,19 +1007,19 @@ main {
 }
 
 .aside-information ul li:nth-child(1)::after {
-    content: '5';
+    content: '1篇';
 }
 
 .aside-information ul li:nth-child(2)::after {
-    content: '7';
+    content: '11天';
 }
 
 .aside-information ul li:nth-child(3)::after {
-    content: 'Today';
+    content: '今天';
 }
 
 .aside-information ul li:nth-child(4)::after {
-    content: '1064';
+    content: '1190行';
 }
 
 /* 尾部模块制作开始 */
@@ -945,5 +1067,6 @@ footer li a:first-child:before {
 .footer-lastone {
     float: right;
     margin-right: 20px;
-    font-size: 13px;
+    font-size: 11px;
+    font-weight: 400;
 }
