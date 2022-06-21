@@ -114,13 +114,11 @@ body {
 /* 导航栏开始 */
 .header-nav {
     position: fixed;
-    right: 125px;
-    width: 85%;
+    right: 127px;
+    width: 85.1%;
     height: 55px;
     background-color: rgb(33, 33, 33);
     border-bottom: 2px solid rgb(21, 21, 21);
-    border-right: 2px solid rgb(21, 21, 21);
-    border-left: 2px solid rgb(21, 21, 21);
     z-index: 1;
 }
 
@@ -147,7 +145,7 @@ body {
 }
 
 .nav-div .box-fisrt {
-    margin-top: 12px;
+    margin-top: 13px;
     float: left;
     width: 190px;
     padding-left: 35px;
@@ -211,9 +209,8 @@ body {
     position: fixed;
     top: 57.5px;
     background-color: rgb(33, 33, 33);
-    width: 15.3%;
+    width: 15.4%;
     height: 100%;
-    border-left: 2px solid rgb(21, 21, 21);
 }
 
 .aside-tou {
@@ -293,10 +290,29 @@ body {
 /* 侧边栏小功能开始 */
 .nav-left {
     border-top: 2px solid rgb(37, 37, 37);
+    width: 100%;
+    height: 610px;
+    overflow: auto;
 }
 
-.nav-left ul li {
+.nav-left::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-left div ul li {
     list-style: none;
+    color: rgb(119, 119, 119);
+    font-size: 13.5px;
+    padding-left: 15px;
+    background-color: rgb(33, 33, 33);
+    height: 40px;
+    line-height: 35px;
+    transition: all 0.7s;
+    font-family: 'icomoon';
+    box-sizing: border-box;
+}
+
+.nav-left summary {
     color: rgb(119, 119, 119);
     font-size: 13.5px;
     padding-left: 15px;
@@ -316,7 +332,7 @@ body {
     background-color: rgb(41, 41, 41);
 }
 
-.nav-left ul li:nth-child(n+4):hover {
+.nav-left details summary:hover {
     background-color: rgb(41, 41, 41);
 }
 
@@ -328,37 +344,43 @@ body {
     padding-left: 15px;
 }
 
-.nav-left ul li:nth-child(n+3)::before {
+.nav-left summary {
+    list-style: none;
+    color: rgb(119, 119, 119);
     font-size: 15px;
-    padding-left: 15px;
+    transition: all 0.7s;
+    padding-left: 30px;
 }
 
-.nav-left ul li:nth-child(4)::before {
-    content: '\e9bd';
-    color: rgb(151, 209, 233);
+.nav-left summary::before {
+    font-size: 15px;
+    padding-right: 15px;
     line-height: 30px;
 }
 
-.nav-left ul li:nth-child(5)::before {
-    content: '\e924';
-    color: rgb(148, 159, 239);
-    line-height: 30px;
-}
-
-.nav-left ul li:nth-child(6)::before {
-    content: '\e919';
-    color: rgb(59, 75, 197);
-    line-height: 30px;
-}
-
-.nav-left ul li:nth-child(n+4)::after {
+.nav-left summary::after {
     content: '\ea50';
     color: rgb(119, 119, 119);
     font-size: 20px;
     margin-left: 130px;
 }
 
-.nav-left ul li a {
+.nav-left details:nth-of-type(1) summary::before {
+    content: '\e9bd';
+    color: rgb(151, 209, 233);
+}
+
+.nav-left details:nth-of-type(2) summary::before {
+    content: '\e924';
+    color: rgb(148, 159, 239);
+}
+
+.nav-left details:nth-of-type(3) summary::before {
+    content: '\e919';
+    color: rgb(59, 75, 197);
+}
+
+.nav-left div ul li a {
     text-decoration: none;
     color: rgb(119, 119, 119);
     font-size: 15px;
@@ -370,22 +392,35 @@ body {
     color: rgb(82, 45, 246);
 }
 
-.nav-left ul li:nth-child(4):hover a {
+.nav-left details:nth-of-type(1) summary:hover {
     color: rgb(151, 209, 233);
 }
 
-.nav-left ul li:nth-child(5):hover a {
+.nav-left details:nth-of-type(2) summary:hover {
     color: rgb(148, 159, 239);
 }
 
-.nav-left ul li:nth-child(6):hover a {
+.nav-left details:nth-of-type(3) summary:hover {
     color: rgb(59, 75, 197);
+}
+
+.nav-left details ul {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(25, 25, 25);
+}
+
+.nav-left details ul li {
+    color: rgb(119, 119, 119);
+    list-style: none;
 }
 
 /* .nav-footer开始 */
 .nav-footer {
+    top: 837px;
+    position: absolute;
     height: 50px;
-    margin-top: 370px;
+    width: 100%;
 }
 
 .nav-footer-box {
@@ -457,7 +492,6 @@ main {
     padding-top: 55px;
     margin-left: 18.1%;
     width: 82.3%;
-    border-right: 2px solid rgb(21, 21, 21);
     height: 2720px;
 }
 
@@ -774,12 +808,12 @@ main {
 
 .icomoon-input li:nth-child(2) label::after {
     content: '\e917';
-    font-size: 50px;
-    margin-left: 20px;
+    font-size: 45px;
+    margin-left: 23px;
 }
 
 .icomoon-input li:nth-child(3) label::after {
-    content: '\e932';
+    content: '\e925';
 }
 
 .icomoon-input .aside-about {
@@ -867,7 +901,7 @@ main {
 }
 
 .aside-tag ul li {
-    background-image: linear-gradient(rgb(77, 50, 230), rgb(55, 42, 232));
+    background-image: linear-gradient(rgb(80, 51, 244), rgb(57, 44, 244));
     border-radius: 5px;
     border: none;
     color: rgb(33, 33, 33);
@@ -888,7 +922,7 @@ main {
 }
 
 .aside-tag ul li:nth-child(3) {
-    background-image: linear-gradient(rgb(46, 200, 110), rgb(35, 121, 214));
+    background-image: linear-gradient(rgb(18, 199, 169), rgb(25, 104, 189));
 }
 
 /* 右侧边栏简洁文章开始 */
@@ -1011,7 +1045,7 @@ main {
 }
 
 .aside-information ul li:nth-child(2)::after {
-    content: '11天';
+    content: '12天';
 }
 
 .aside-information ul li:nth-child(3)::after {
@@ -1019,7 +1053,7 @@ main {
 }
 
 .aside-information ul li:nth-child(4)::after {
-    content: '1190行';
+    content: '1224行';
 }
 
 /* 尾部模块制作开始 */
