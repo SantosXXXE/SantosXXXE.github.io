@@ -1228,7 +1228,7 @@ main {
 }
 
 .aside-information ul li:nth-child(4)::after {
-    content: '1275行';
+    content: '1290行';
 }
 
 /* 尾部模块制作开始 */
