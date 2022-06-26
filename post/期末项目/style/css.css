@@ -14,13 +14,9 @@
     width: 22.5%;
 }
 
-.main-paper .paper-article:nth-of-type(2n) .paper-img {
-    background: url(../images/hello-gridea.png) -180px -180px;
-}
-
-.main-paper .paper-article:nth-of-type(2n-1) .paper-img {
-    background: url(../images/blog.png) no-repeat;
-    background-size: 885px;
+.main-paper .paper-article:nth-of-type(n) .paper-img {
+    background: url(../images/yuan.png);
+    background-size: 900px;
 }
 
 .footer-other {

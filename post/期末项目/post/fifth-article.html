@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
     <title>Santos个人博客</title>
-    <link rel="stylesheet" href="../style/GitHub.css">
+    <link rel="stylesheet" href="../style/fifth-article.css">
     <link rel="stylesheet" href="../style/main.css">
     <link rel="shortcut icon" href="../images/bitbug_favicon.ico">
 </head>
@@ -15,7 +15,7 @@
     <div class="heart">
         <!-- 导航栏固定定位开始 -->
         <header class="header-nav">
-            <a href="GitHub.html">
+            <a href="fisrt-article.html">
                 <button class="top"></button>
             </a>
             <div class="nav-div">
@@ -133,68 +133,55 @@
             <div class="main-box">
                 <div class="main-header">
                     <header>
-                        <h2>GitHub</h2>
+                        <h2>鼠标移动视觉差效果</h2>
                     </header>
+                    <ul>
+                        <li>Santos</li>
+                        <li>2022年6月26日</li>
+                        <li>399字数</li>
+                    </ul>
                 </div>
                 <div class="main-paper">
                     <header class="paper-header">
                         <ul>
                             <a href="index.html">首页</a>
                             <a>/</a>
-                            <a>GitHub</a>
+                            <a>正文</a>
                         </ul>
                         <ul>
+                            <a
+                                href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://santosxxxe.github.io/post/%E6%9C%9F%E6%9C%AB%E9%A1%B9%E7%9B%AE/post/twice.html&title=%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8GitHub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2&site=https://santosxxxe.github.io/post/%E6%9C%9F%E6%9C%AB%E9%A1%B9%E7%9B%AE/post/twice.html">分享到:QQ</a>
+                            <a href="https://www.facebook.com/sharer.php?title=如何使用GitHub搭建个人网页&u=https://santosxxxe.github.io/"
+                                target="_blank">/Facebook</a>
                         </ul>
                     </header>
-                    <div class="paper-article">
-                        <a href="fisrt-article.html">
-                            <div class="paper-img"></div>
-                            <div class="paper-text">
-                                <h2>如何使用GitHub搭建个人网页</h2>
-                                <p>无需VPN的免费个人网站</p>
-                                <small>2022年6月13日</small>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="paper-article">
-                        <a href="fourth-article.html">
-                            <div class="paper-img"></div>
-                            <div class="paper-text">
-                                <h2>Gridea静态博客写作软件 </h2>
-                                <p>配合GitHub搭建网站</p>
-                                <small>2022年6月26日</small>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="paper-article">
-                        <a href="fisrt-article.html">
-                            <div class="paper-img"></div>
-                            <div class="paper-text">
-                                <h2>如何使用GitHub搭建个人网页</h2>
-                                <p>无需VPN的免费个人网站</p>
-                                <small>2022年6月13日</small>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="paper-article">
-                        <a href="fourth-article.html">
-                            <div class="paper-img"></div>
-                            <div class="paper-text">
-                                <h2>Gridea静态博客写作软件 </h2>
-                                <p>配合GitHub搭建网站</p>
-                                <small>2022年6月26日</small>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="paper-article">
-                        <a href="fisrt-article.html">
-                            <div class="paper-img"></div>
-                            <div class="paper-text">
-                                <h2>如何使用GitHub搭建个人网页</h2>
-                                <p>无需VPN的免费个人网站</p>
-                                <small>2022年6月13日</small>
-                            </div>
-                        </a>
+                    <div class="paper-big-article">
+                        <div class="paper-img">
+                        </div>
+                        <div class="paper-text">
+                            <h2>1.什么是视觉差</h2>
+                            <p>通过对多个元素块设置背景不随页面的滚动从而达到给观看的人形成一种视觉差的效果。</p>
+                            <p>视差滚动（Parallax Scrolling）是指多层背景以不同的速度移动，形成立体的运动效果，带来非常出色的视觉体验
+                                我们可以把网页解刨成：背景层、内容层、悬浮层</p>
+                            <p>当滚动鼠标滑轮的时候，各个图层以不同的速度移动，形成视觉差的效果</p>
+                            <h2>2.实现方式</h2>
+                            <p>使用css形式实现视觉差滚动效果的方式有：</p>
+                            <p>background-attachment</p>
+                            <p>transform:translate3D</p>
+                            <h2>background-attachment</h2>
+                            <p>作用是设置背景图像是否固定或者随着页面的其余部分滚动</p>
+                            <p>值分别有如下：</p>
+                            <p>scroll：默认值，背景图像会随着页面其余部分的滚动而移动</p>
+                            <p>fixed：当页面的其余部分滚动时，背景图像不会移动</p>
+                            <p>inherit：继承父元素background-attachment属性的值</p>
+                            <p>完成滚动视觉差就需要将background-attachment属性设置为fixed，让背景相对于视口固定。及时一个元素有滚动机制，背景也不会随着元素的内容而滚动</p>
+                            <p>也就是说，背景一开始就已经被固定在初始的位置</p>
+                            <h2>transform:translate3D</h2>
+                            <p>同样，让我们先来看一下两个概念transform和perspective：</p>
+                            <p>transform: css3 属性，可以对元素进行变换(2d/3d)，包括平移 translate,旋转 rotate,缩放 scale,等等</p>
+                            <p>perspective: css3 属性，当元素涉及 3d 变换时，perspective 可以定义我们眼睛看到的 3d 立体效果，即空间感</p>
+                            <small>最后修改：&nbsp;2022年6月26日</small>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -240,7 +227,7 @@
                                         <input type="radio" name="check" id="active1" checked><label
                                             for="active1"></label>
                                         <div class="aside-article">
-                                            <h2>热门文章</h2>
+                                            <h2>最新文章</h2>
                                             <div>
                                                 <a href="fisrt-article.html">
                                                     <img src="../images/GitHub-small.jpg" alt="">

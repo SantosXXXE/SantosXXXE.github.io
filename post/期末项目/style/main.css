@@ -529,27 +529,27 @@ body {
 }
 
 .nav-left details:nth-of-type(1) a:nth-child(1) li:after {
-    content: '1';
+    content: '2';
 }
 
 .nav-left details:nth-of-type(1) a:nth-child(2) li:after {
-    content: '1';
+    content: '4';
 }
 
 .nav-left details:nth-of-type(1) a:nth-child(3) li:after {
-    content: '0';
+    content: '3';
 }
 
 .nav-left details:nth-of-type(1) a:nth-child(4) li:after {
-    content: '1';
+    content: '0';
 }
 
 .nav-left details:nth-of-type(1) a:nth-child(5) li:after {
-    content: '1';
+    content: '3';
 }
 
 .nav-left details:nth-of-type(1) a:nth-child(6) li:after {
-    content: '0';
+    content: '1';
 }
 
 .nav-left details:nth-of-type(1) a:nth-child(7) li:after {
@@ -624,19 +624,19 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0);
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: rgb(0, 0, 0);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
     background-color: rgb(65, 62, 62);
 }
 
@@ -840,6 +840,29 @@ main {
     border: none;
     border-radius: 12px 12px 0px 0px;
     transition: all 0.4s;
+}
+
+.paper-big-article .paper-text p {
+    text-indent: 2em;
+}
+
+.paper-article:nth-of-type(2) .paper-img {
+    background: url(../images/seti.jpg);
+    background-size: 900px;
+}
+
+.paper-article:nth-of-type(3) .paper-img {
+    background: url(../images/lilpeep.jpg) 0px -60px;
+    background-size: 900px;
+}
+
+.paper-article:nth-of-type(4) .paper-img {
+    background: url(../images/hello-gridea.png) -180px -180px;
+}
+
+.paper-article:nth-of-type(5) .paper-img {
+    background: url(../images/yuan.png);
+    background-size: 900px;
 }
 
 .paper-img:hover {
@@ -1216,11 +1239,11 @@ main {
 }
 
 .aside-information ul li:nth-child(1)::after {
-    content: '1篇';
+    content: '5篇';
 }
 
 .aside-information ul li:nth-child(2)::after {
-    content: '14天';
+    content: '18天';
 }
 
 .aside-information ul li:nth-child(3)::after {
