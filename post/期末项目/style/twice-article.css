@@ -19,6 +19,7 @@
 
 .paper-big-article .paper-img {
     background: url(../images/seti.jpg);
+    background-size: 900px;
 }
 
 .paper-big-article .paper-text {
