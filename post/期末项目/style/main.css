@@ -247,8 +247,29 @@ body {
 .nav-box-right {
     /* background-color: black; */
     height: 100%;
-    width: 100px;
+    width: 220px;
     float: right;
+}
+
+.nav-box-right a {
+    float: left;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-top: 12.5px;
+    height: 30px;
+    background-color: rgb(145, 145, 145);
+    margin-right: 30px;
+    line-height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 55px;
+    animation: small-light 8s ease infinite, shake 0.5s ease-in-out infinite alternate;
+}
+
+.nav-box-right a::before {
+    font-family: 'icomoon';
+    content: '\e934';
+    margin-right: 7px;
 }
 
 .nav-box-right details {
