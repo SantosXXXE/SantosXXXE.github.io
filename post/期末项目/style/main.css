@@ -257,7 +257,7 @@ body {
     color: rgb(0, 0, 0);
     margin-top: 12.5px;
     height: 30px;
-    background-color: rgb(145, 145, 145);
+    background-image: linear-gradient(rgb(216, 222, 29), rgb(215, 190, 25));
     margin-right: 30px;
     line-height: 30px;
     padding-left: 15px;
