@@ -42,7 +42,3 @@
     font-size: 10px;
     font-weight: 500;
 }
-
-.paper-footer-other ul li:hover {
-    transform: scale(1.5);
-}
