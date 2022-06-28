@@ -257,7 +257,7 @@ body {
     color: rgb(0, 0, 0);
     margin-top: 12.5px;
     height: 30px;
-    background-image: linear-gradient(rgb(163, 160, 206), rgb(91, 89, 78));
+    background-image: linear-gradient(rgb(223, 222, 231), rgb(174, 170, 150));
     margin-right: 30px;
     line-height: 30px;
     padding-left: 15px;
@@ -1264,7 +1264,7 @@ main {
 }
 
 .aside-information ul li:nth-child(2)::after {
-    content: '18天';
+    content: '19天';
 }
 
 .aside-information ul li:nth-child(3)::after {
@@ -1272,7 +1272,7 @@ main {
 }
 
 .aside-information ul li:nth-child(4)::after {
-    content: '1313行';
+    content: '1331行';
 }
 
 /* 尾部模块制作开始 */
