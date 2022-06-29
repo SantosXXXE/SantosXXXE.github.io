@@ -890,7 +890,7 @@ main {
     background-color: blue;
     width: 100%;
     height: 300px;
-    background-size: 885px;
+    background-size: cover;
     border: none;
     border-radius: 12px 12px 0px 0px;
     transition: all 0.4s;
@@ -906,17 +906,18 @@ main {
 }
 
 .paper-article:nth-of-type(3) .paper-img {
-    background: url(../images/lilpeep.jpg) 0px -60px;
+    background: url(../images/lilpeep.jpg) 0px -50px;
     background-size: 900px;
 }
 
 .paper-article:nth-of-type(4) .paper-img {
-    background: url(../images/hello-gridea.png) -180px -180px;
+    background: url(../images/hello-gridea.png) -30px -100px;
+    background-size: 900px;
 }
 
 .paper-article:nth-of-type(5) .paper-img {
     background: url(../images/yuan.png);
-    background-size: 900px;
+    background-size: cover;
 }
 
 .paper-img:hover {
@@ -1298,7 +1299,7 @@ main {
 }
 
 .aside-information ul li:nth-child(2)::after {
-    content: '18天';
+    content: '21天';
 }
 
 .aside-information ul li:nth-child(3)::after {
@@ -1348,8 +1349,8 @@ main {
     content: '粤公安网备';
 }
 
-.footer-lastone {
-    padding-left: 483px;
+.footer .footer-lastone {
+    margin-left: 493px;
     font-size: 11px;
     font-weight: 400;
 }
