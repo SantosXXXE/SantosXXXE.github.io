@@ -4,8 +4,7 @@
     border: none;
     border-radius: 4px;
     background-color: rgb(33, 33, 33);
-    margin-left: 325px;
-    margin-top: 75px;
+    margin: 80px auto;
 }
 
 .paper-footer-other ul li:nth-child(3) {
