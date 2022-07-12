@@ -130,6 +130,19 @@
 }
 
 @media screen and (max-width: 767px) {
+    .icomoon-input ul li label {
+        display: none;
+    }
+
+    .aside-article h2 {
+        font-size: 15px;
+    }
+
+    .aside-article p,
+    small {
+        display: none;
+    }
+
     .nav-box-right {
         display: none;
     }
@@ -149,12 +162,62 @@
     .icomoon-box {
         display: none;
     }
+
+    .paper-text {
+        margin-left: 10px;
+        height: 70px;
+    }
+
+    .paper-text h2 {
+        font-size: 13px;
+    }
+
+    .paper-text p {
+        font-size: 12px;
+    }
+
+    .paper-img {
+        height: 100px;
+    }
+
+    .heart {
+        height: 1350px;
+    }
+
+    .nav-footer-box li {
+        display: none;
+    }
+
+    .nav-left li {
+        display: none;
+    }
+
+    .main-header span {
+        font-size: 9px;
+    }
+
+    .box-fisrt {
+        padding-left: 100px;
+    }
 }
 
 @media screen and (min-width:768px) {
+    .box-fisrt {
+        padding-left: 35px;
+    }
+
+    .main-header span {
+        font-size: 14px;
+    }
+
+    .paper-img {
+        height: 300px;
+    }
+
     .heart {
         padding-left: 7.4%;
         padding-right: 7.8%;
+        height: 2750px;
     }
 
     .header-nav {
@@ -172,6 +235,11 @@
         margin-top: 14px;
         margin-right: 25px;
     }
+
+    .paper-text {
+        margin-left: 10px;
+        height: 150px;
+    }
 }
 
 /* 布局开始 */
@@ -187,7 +255,7 @@ body {
 .heart {
     position: relative;
     box-sizing: border-box;
-    height: 2680px;
+    max-width: 1700px;
     width: 100%;
 }
 
@@ -242,7 +310,6 @@ body {
 .nav-div .box-fisrt {
     float: left;
     width: 190px;
-    padding-left: 35px;
 }
 
 .box-fisrt .back {
@@ -368,7 +435,6 @@ body {
 /* 侧边栏开始 */
 .aside-left {
     position: fixed;
-    top: 57.5px;
     background-color: rgb(33, 33, 33);
     height: 100%;
 }
@@ -380,13 +446,13 @@ body {
     transition: all .4s;
     transform-style: preserve-3d;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 77.5px;
 }
 
 .aside-left-text {
     text-align: center;
     margin-top: -5px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .aside-left-text span {
@@ -451,7 +517,6 @@ body {
 .nav-left {
     border-top: 2px solid rgb(37, 37, 37);
     width: 100%;
-    height: 64.4%;
     overflow: auto;
 }
 
@@ -641,13 +706,15 @@ body {
 
 /* .nav-footer开始 */
 .nav-footer {
-    height: 50px;
+    position: absolute;
+    height: 52px;
     width: 100%;
+    bottom: 0;
 }
 
 .nav-footer-box {
     float: left;
-    height: 50px;
+    height: 100%;
     width: 33.33%;
     text-align: center;
     padding-top: 7px;
@@ -742,7 +809,6 @@ main {
 
 .main-header span {
     color: rgb(82, 82, 82);
-    font-size: 14px;
 }
 
 .main-header ul {
@@ -911,7 +977,6 @@ main {
 .paper-article {
     background-color: rgb(32, 32, 32);
     width: 100%;
-    height: 450px;
     border: none;
     border-radius: 12px;
     box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.35);
@@ -936,7 +1001,6 @@ main {
     background: url(../images/blog.png) no-repeat;
     background-color: blue;
     width: 100%;
-    height: 300px;
     background-size: cover;
     border: none;
     border-radius: 12px 12px 0px 0px;
@@ -949,17 +1013,17 @@ main {
 
 .paper-article:nth-of-type(2) .paper-img {
     background: url(../images/seti.jpg);
-    background-size: 900px;
+    background-size: cover;
 }
 
 .paper-article:nth-of-type(3) .paper-img {
-    background: url(../images/lilpeep.jpg) 0px -50px;
-    background-size: 900px;
+    background: url(../images/lilpeep.jpg);
+    background-size: cover;
 }
 
 .paper-article:nth-of-type(4) .paper-img {
     background: url(../images/hello-gridea.png) -30px -100px;
-    background-size: 900px;
+    background-size: cover;
 }
 
 .paper-article:nth-of-type(5) .paper-img {
@@ -973,9 +1037,7 @@ main {
 
 .paper-text {
     width: 100%;
-    height: 150px;
     margin-top: 20px;
-    margin-left: 30px;
     color: rgb(119, 119, 119);
     line-height: 35px;
 }
@@ -986,11 +1048,12 @@ main {
 
 /* 右侧边栏开始 */
 .aside-right {
+    width: 22.5%;
     float: left;
     background-color: rgb(255, 0, 0);
     background-color: rgb(33, 33, 33);
     height: 100%;
-    width: 22.5%;
+    box-sizing: border-box;
 }
 
 /* 右侧边栏图标制作开始 */
@@ -1038,6 +1101,7 @@ main {
     height: 50px;
     list-style: none;
     width: 33.33%;
+    text-align: center;
 }
 
 /* input隐藏 */
@@ -1061,6 +1125,7 @@ main {
     position: absolute;
     left: 0;
     top: 80px;
+    text-align: left;
 }
 
 /* input选中状态时候对应的label的样式 */
@@ -1079,7 +1144,6 @@ main {
     font-family: 'icomoon';
     font-size: 40px;
     line-height: 50px;
-    margin-left: 25px;
 }
 
 .icomoon-input li:nth-child(1) label::after {
@@ -1089,7 +1153,6 @@ main {
 .icomoon-input li:nth-child(2) label::after {
     content: '\e917';
     font-size: 45px;
-    margin-left: 23px;
 }
 
 .icomoon-input li:nth-child(3) label::after {
@@ -1161,15 +1224,16 @@ main {
     color: rgb(213, 119, 60);
 }
 
-.side-article .aside-tag {
+.aside-tag {
     width: 100%;
     height: 450px;
+    box-sizing: border-box;
 }
 
 .aside-tag h2 {
     text-align: center;
     margin-bottom: 30px;
-    margin-left: 22px;
+    text-align: center;
     color: rgb(119, 119, 119);
 }
 
@@ -1179,10 +1243,12 @@ main {
 
 .aside-tag ul {
     /* background-color: red; */
+    display: flex;
     text-align: center;
     width: 100%;
     height: 20px;
     margin-bottom: 7px;
+    justify-content: space-around;
 }
 
 .aside-tag ul li {
