@@ -1,0 +1,87 @@
+@keyframes color {
+    0% {
+        color: rgb(255, 0, 0);
+    }
+
+    25% {
+        color: rgb(55, 0, 253);
+    }
+
+    50% {
+        color: rgb(0, 125, 0);
+    }
+
+    75% {
+        color: rgb(228, 228, 0);
+    }
+
+    100% {
+        color: rgb(255, 0, 0);
+    }
+}
+
+@keyframes orloc {
+    0% {
+        color: rgb(255, 0, 0);
+    }
+
+    25% {
+        color: rgb(228, 228, 0);
+    }
+
+    50% {
+        color: rgb(0, 125, 0);
+    }
+
+    75% {
+        color: rgb(55, 0, 253);
+    }
+
+    100% {
+        color: rgb(255, 0, 0);
+    }
+}
+
+@keyframes light {
+    0% {
+        box-shadow: 0 0 5px 1px #f00;
+    }
+
+    25% {
+        box-shadow: 0 0 7px 2px #0f0;
+    }
+
+    50% {
+        box-shadow: 0 0 5px 1px #00f;
+    }
+
+    75% {
+        box-shadow: 0 0 7px 2px #0f0;
+    }
+
+    100% {
+        box-shadow: 0 0 5px 1px #f00;
+    }
+}
+
+@keyframes button {
+    0% {
+        box-shadow: 0 0 3px 0.5px #f00;
+    }
+
+    25% {
+        box-shadow: 0 0 5px 1px #0f0;
+    }
+
+    50% {
+        box-shadow: 0 0 3px 0.5px #00f;
+    }
+
+    75% {
+        box-shadow: 0 0 5px 1px #0f0;
+    }
+
+    100% {
+        box-shadow: 0 0 3px 0.5px #f00;
+    }
+}
