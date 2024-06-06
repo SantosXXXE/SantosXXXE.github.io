@@ -10,25 +10,82 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #1a1a1a;
+}
+
+/* 确保 .author-info 不会设置宽度限制或延展 */
+.author-info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* 根据需要来调整这个宽度设置 */
+}
+
+/* 头像类，不需要设置 flex: 1; */
+.author-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.author-description {
+    flex: 1;
+    /* 确保除了头像外，其他空间都是描述的内容空间 */
+}
+
+/* 添加一个类到包裹 <p> 和 <ul> 的 .about-author，以便更精确地控制宽度 */
+.about-author {
+    width: 100%;
+    /* 确保它占满其父容器 */
+    padding: 10px;
+    /* 添加或去除内边距根据设计需求 */
+    box-sizing: border-box;
+}
+
+/* 确保 .social-links 不会扩展流外设置宽度 */
+.social-links {
+    padding: 0;
+    list-style-type: none;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-links a {
+    color: #007bff;
+    /* 适当的链接颜色 */
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
 }
 
 /* 头部样式 */
 .site-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+    background-color: #1a1a1a;
+    border-bottom: 0.1em solid #666;
+    padding: 0px 0px 20px 0px;
+    color: transparent;
     text-align: center;
 }
 
+
 .site-title {
-    margin: 0;
-    font-size: 1.8em;
+    font-size: 4em;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(90deg, #eff964, #0d40d9);
+    transition-duration: 1s;
+    /* 增加动画时长到20s */
 }
 
 .site-navigation {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .site-navigation ul {
@@ -42,7 +99,7 @@ body {
 }
 
 .site-navigation a {
-    color: #fff;
+    color: #dbdbdb;
     text-decoration: none;
     font-weight: bold;
 }
@@ -52,7 +109,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px;
+    padding: 40px 100px 40px 100px;
 }
 
 .article-list {
@@ -63,10 +120,15 @@ body {
 }
 
 .blog-post {
-    background-color: #fff;
+    background-color: #3dae7b;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 5px;
+}
+
+/* 移除最后一个 .blog-post 的 margin-bottom */
+.article-list .blog-post:last-child {
+    margin-bottom: 0;
 }
 
 .post-title {
@@ -97,9 +159,10 @@ body {
 /* 侧边栏区域样式 */
 .sidebar {
     padding: 20px;
-    background-color: #fff;
+    background-color: rgb(36, 36, 36);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     min-height: 100vh;
+    width: 250px;
     /* 确保侧边栏至少与视口高度相同 */
 }
 
@@ -109,7 +172,7 @@ body {
     /* 两段之间的距离 */
     padding-bottom: 10px;
     /* 底部内边距 */
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #363636;
     /* 可为间隔视觉提供线索的底边框 */
 }
 
@@ -131,7 +194,7 @@ body {
 .latest-posts a {
     text-decoration: none;
     /* 移除下划线 */
-    color: #333;
+    color: rgb(157, 189, 29);
     /* 文字颜色 */
     display: block;
     /* 以块级元素显示，使整个区域可点击 */
@@ -192,9 +255,12 @@ body {
     margin-bottom: 30px;
 }
 
+.sidebar h3,
+.latest-posts,
+.about-author,
 .social-links {
     padding: 0;
-    list-style: none;
+    list-style-type: none;
 }
 
 .social-links li {
@@ -211,7 +277,7 @@ body {
 .site-footer {
     text-align: center;
     padding: 20px 0;
-    background-color: #333;
+    background-color: #282828;
     color: #fff;
 }
 
