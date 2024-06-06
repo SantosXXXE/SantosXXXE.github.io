@@ -56,35 +56,31 @@ function update() {
 
 update();
 const username = document.getElementById('username');
-const password = document.getElementById('password')
-const confirm_password = document.getElementById('confirm_password')
+const password = document.getElementById('password');
+const confirm_password = document.getElementById('confirm_password');
 const username_icon = document.getElementsByTagName('svg')[0];
 const password_icon = document.getElementsByTagName('svg')[1];
 const confirm_password_icon = document.getElementsByTagName('svg')[2];
 
-function addEventListeners(input, icon) {
-    // 若找不到元素，打印一条错误信息到控制台而不是执行下面的代码
-    if (!input || !icon) {
-        console.error('An input or icon element was not found.');
-        return;
-    }
+// 声明 inputs 数组在全局作用域内
+const inputs = [username, password, confirm_password];
 
-    // 依然使用事件监听器
+function addEventListeners(input, icon) {
     input.addEventListener("focus", function () {
-        input.parentNode.className = "focus";
+        input.parentNode.classList.add("focus");
         icon.style.fill = "#4de680";
     });
     input.addEventListener("blur", function () {
-        input.parentNode.className = "input";
+        input.parentNode.classList.remove("focus");
         icon.style.fill = "#9b9b9b";
     });
 }
 
-// ...
-
-// 在 DOM 完全加载后添加事件监听器
 document.addEventListener('DOMContentLoaded', function () {
     inputs.forEach((input, index) => {
         addEventListeners(input, icons[index]);
     });
 });
+
+// icons 数组也需要在全局作用域内声明
+const icons = [username_icon, password_icon, confirm_password_icon];
