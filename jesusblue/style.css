@@ -134,7 +134,6 @@ body {
     display: inline-block;
     text-decoration: none;
     color: #42b983;
-    color: #42b983;
     border: 1px solid #333;
     padding: 5px 10px;
     border-radius: 5px;
@@ -144,29 +143,25 @@ body {
 
 .read-more:hover {
     background-color: #1a1a1a;
-    color: #42b983;
 }
 
 
 /* 最新文章标题样式 */
 .latest-posts .post-title {
     margin: 0;
-    /* 移除外部间距 */
     padding-top: 10px;
-    /* 与小节标题的距离 */
     font-size: 16px;
     /* 文章标题字体大小 */
 }
 
 .latest-posts .post-title:first-child {
     padding-top: 0;
-    /* 第一篇文章不添加上边距 */
 }
 
 .latest-posts a {
     text-decoration: none;
     /* 移除下划线 */
-    color: rgb(157, 189, 29);
+    color: #42b983;
     /* 文字颜色 */
     display: block;
     /* 以块级元素显示，使整个区域可点击 */
@@ -183,20 +178,72 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
+    color: #dbdbdb;
+    text-align: center;
     /* 根据需要来调整这个宽度设置 */
 }
 
 /* 头像类，不需要设置 flex: 1; */
-.author-avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-right: 20px;
+/* 定义.container相对定位，以便包含绝对定位的元素 */
+.author-avatar-change {
+    position: relative;
+    width: 90px;
+    /* 确保尺寸匹配 */
+    height: 90px;
+    margin-left: 10px;
+    /* 确保与宽度相同 */
 }
+
+.author-avatar,
+.author-avatar-hover {
+    width: 100%;
+    /* 与容器相同 */
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    backface-visibility: hidden;
+    /* 隐藏翻转图片的背面 */
+}
+
+.author-avatar {
+    position: relative;
+    /* 默认图片相对定位，可用于z-index堆叠上下文 */
+}
+
+.author-avatar-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    /* 初始状态旋转至背后 */
+}
+
+.author-avatar-change:hover .author-avatar {
+    transform: rotateY(180deg);
+    /* 鼠标悬浮时翻转到背后 */
+}
+
+.author-avatar-change:hover .author-avatar-hover {
+    transform: rotateY(0);
+    /* 鼠标悬浮时翻转至正面 */
+}
+
 
 .author-description {
     flex: 1;
+    font-size: 16px;
+    font-weight: bold;
     /* 确保除了头像外，其他空间都是描述的内容空间 */
+}
+
+.author-description p {
+    color: #42b983;
+}
+
+.author-description div {
+    margin-top: -7px;
+    margin-left: 3px;
+    font-size: 12px;
 }
 
 /* 添加一个类到包裹 <p> 和 <ul> 的 .about-author，以便更精确地控制宽度 */
@@ -216,7 +263,7 @@ body {
 
 .about-author h3,
 .about-author p {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     /* 段落间的间距 */
 }
 
@@ -229,7 +276,7 @@ body {
     background-color: rgb(36, 36, 36);
     box-shadow: 3px 6px 20px 6px rgba(0, 0, 0, 0.6);
     min-height: 100%;
-    width: 400px;
+    width: 300px;
     border: 2px solid #42b983;
     /* 确保侧边栏至少与视口高度相同 */
 }
@@ -241,12 +288,7 @@ body {
     border-bottom: 1px solid #363636;
 }
 
-.sidebar h3 {
-    margin-bottom: 10px;
-    color: #dbdbdb;
-}
-
-.sidebar p {
+.latest-posts h3 {
     color: #dbdbdb;
 }
 
