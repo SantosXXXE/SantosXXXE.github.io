@@ -10,8 +10,12 @@
         margin: 10px 0;
     }
 
-    .site-navigation li:first-child {
-        display: none;
+    .site-navigation a {
+        font-size: 17px;
+    }
+
+    .site-navigation li {
+        margin: 0 5px;
     }
 
     .post-title {
@@ -23,15 +27,16 @@
     }
 
     .cover-image {
-        height: 300px;
+        height: 120px;
     }
 
     .cover-image .image-text h1 {
         font-size: 3.3em;
+        margin-bottom: -10px;
     }
 
     .cover-image .image-text p {
-        font-size: 0.4em;
+        font-size: 11px;
     }
 
     .site-title {
@@ -41,4 +46,13 @@
     .flower {
         display: none;
     }
+
+    .scroll-button {
+        display: none;
+    }
+}
+
+@font-face {
+    font-family: "myfont";
+    src: url(../fonts/Facon-2.ttf);
 }

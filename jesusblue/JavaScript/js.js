@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (scrollDistance === 0) {
             // 如果页面滚动到了顶部（或者几乎到顶部），则隐藏header
-            siteHeader.style.top = '-60px'; // 你可以根据header高度设置top值为负值
+            siteHeader.style.top = '-700px'; // 你可以根据header高度设置top值为负值
         } else {
             // 如果页面不是在顶部，则显示header
             siteHeader.style.top = '0';
@@ -158,3 +158,63 @@ document.addEventListener('DOMContentLoaded', function () {
     // 一次性生成所有桜花
     createSakuras();
 });
+/////
+////
+//
+document.addEventListener('DOMContentLoaded', function () {
+    const scrollbar = document.querySelector('.scrollbar');
+    const maxScrollHeight = document.body.scrollHeight - window.innerHeight;
+
+    window.addEventListener('scroll', function () {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollPercentage = scrollTop / maxScrollHeight;
+
+        scrollbar.style.width = `${(100 * scrollPercentage).toFixed(2)}%`; // 将滚动条宽度设置为滚动的百分比
+    });
+});
+///
+//
+//
+document.addEventListener('DOMContentLoaded', function () {
+    const button = document.querySelector('.scroll-button');
+    const coverImage = document.querySelector('.cover-image');
+
+    // 确保图片加载完成后设置滚动函数
+    const img = coverImage.querySelector('img');
+    const checkAndBindScroll = function () {
+        if (img.complete) {
+            // 图片加载完成后定义滚动到图片底部的函数
+            const windowTop = window.pageYOffset || document.documentElement.scrollTop;
+            const coverImageRect = coverImage.getBoundingClientRect();
+            const coverImageTop = coverImageRect.top;
+            const coverImageBottom = coverImageRect.bottom;
+
+            // 判断图片何时到达视窗底部
+            const scrollAmount = coverImageBottom > window.innerHeight ?
+                (coverImageBottom - windowTop) :
+                (coverImageHeightInPx - windowTop);
+
+            scrollCoverImage = function () {
+                window.scrollBy({
+                    top: scrollAmount, // 实际滚动的距离
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            };
+
+            // 绑定点击事件到按钮
+            button.addEventListener('click', scrollCoverImage);
+        } else {
+            // 图片还未加载完成，延迟检查
+            setTimeout(checkAndBindScroll, 100);
+        }
+    };
+
+    // 获取图片的高度
+    let coverImageHeightInPx = coverImage.offsetHeight;
+    // 开始检查图片是否加载
+    checkAndBindScroll();
+});
+//
+//
+//

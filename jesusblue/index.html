@@ -13,6 +13,9 @@
 <body>
     <!-- 页面头部 -->
     <header class="site-header">
+        <div class="scrollbar-container">
+            <div class="scrollbar"></div>
+        </div>
         <div class="header-content">
             <h2 class="site-title jesusblue">Jesus-Blue</h2>
             <nav class="site-navigation">
@@ -25,16 +28,23 @@
                     <li><a href="contact.html">Mysql</a></li>
                 </ul>
             </nav>
+            <div class="top-image" style="position: absolute; top: 385px; left: 0; transform: translateY(-50%);">
+                <img src="img/绳子.png" alt="Go to Top" style="width: 150px; height: auto; cursor: pointer;"
+                    onclick="window.scrollTo({top:0,behavior:'smooth'})">
+            </div>
         </div>
     </header>
     <!-- 新增的封面图片区域 -->
     <div class="cover-image">
-        <img src="img/field-6574455.jpg" class="full-size-img">
+        <img src="https://img.gs/pmnzmnsxtq/full/https://santosxxxe.github.io/jesusblue/img/field-6574455.jpg"
+            class="full-size-img">
         <!-- 文字内容容器 -->
         <div class="image-text">
             <h1 class="jesusblue">JesusBlue</h1>
-            <p>You got to put the past behind you before you can move on.</p>
+            <p>I think our love can do anything we want it to.</p>
         </div>
+        <!-- 添加一个按钮 -->
+        <button class="scroll-button">⇓</button>
     </div>
     <!-- 页面主体 -->
     <div class="main-content">

@@ -18,6 +18,86 @@ body.scrolled .site-header {
     /* 当滚动时出现 */
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    /* 滚动条宽度 */
+}
+
+.scrollbar-container {
+    width: 100%;
+    height: 2px;
+    /* 根据需要调整滚动条的高度 */
+    background-color: #363636;
+    /* 设置滚动条背景色 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    /* 防止滚动条影响页面滚动 */
+    z-index: 10000;
+    /* 确保滚动条在最上层 */
+}
+
+/* 滚动条本身 */
+.scrollbar {
+    height: 100%;
+    background-color: #42b983;
+    /* 设置滚动条滑块的颜色 */
+    width: 0;
+    /* 初始宽度为0 */
+    transition: width 0.3s;
+    /* 平滑过渡效果 */
+}
+
+@keyframes floatAnimation {
+
+    0%,
+    100% {
+        bottom: -20px;
+    }
+
+    50% {
+        bottom: -16px;
+
+    }
+}
+
+.top-image img {
+    display: block;
+    /* 图片独占一整行 */
+    width: 50px;
+    /* 或者您想要的尺寸 */
+    border: none;
+    /* 移除图片边框 */
+    border-radius: 5px;
+    /* 圆角边框，根据喜好设置 */
+    transition: transform 0.3s ease;
+    /* 平滑过渡效果 */
+    margin: 10px;
+    /* 图片与屏幕边缘的距离 */
+}
+
+
+.scroll-button {
+    position: absolute;
+    /* 按钮距离图片底部的位置 */
+    left: 50%;
+    transform: translateX(-50%);
+    /* 水平居中按钮 */
+    padding: 10px 10px;
+    color: rgb(245, 201, 209);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+    animation: floatAnimation 1s infinite ease-in-out;
+    /* 应用动画 */
+    background-color: transparent;
+    will-change: bottom, transform;
+    transition-duration: 1s;
+}
+
 /* 基础樱花样式 */
 
 
@@ -31,14 +111,14 @@ body.scrolled .site-header {
     border-bottom: 0.1em solid #666;
     /* ...其他样式 ... */
     text-align: center;
-    height: 60px;
+    height: 70px;
     position: fixed;
-    top: -60px;
+    top: -700px;
     /* 滚动前隐藏在视图外 */
     left: 0;
     right: 0;
     width: 100%;
-    line-height: 60px;
+    line-height: 70px;
     z-index: 1000;
     transition: top 0.3s;
     /* 平滑过渡效果 */
@@ -49,10 +129,12 @@ body.scrolled .site-header {
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    background-image: linear-gradient(90deg, #eff964, #0d40d9);
+    background-image: linear-gradient(90deg, #e3f300, #0040ff);
     transition-duration: 1s;
     float: left;
     margin: 0px 0px 0px 20px;
+    font-family: "myfont";
+    line-height: 75px;
     /* 增加动画时长到20s */
 }
 
@@ -75,6 +157,7 @@ body.scrolled .site-header {
     text-decoration: none;
     font-weight: bold;
     transition-duration: 0.4s;
+    font-size: 23px;
 }
 
 .site-navigation a:hover {
@@ -85,14 +168,11 @@ body.scrolled .site-header {
     position: relative;
     width: 100%;
     height: 100vh;
-    /* 使用视口高度确保全屏 */
-    background: rgba(0, 0, 0, 0.3);
-    /* 添加半透明背景，根据需要修改 */
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid #dbdbdb;
     /* 确保图片不超出容器 */
 }
 
@@ -101,6 +181,8 @@ body.scrolled .site-header {
     height: 100%;
     /* 保持图片高度填满容器 */
     object-fit: cover;
+    opacity: 0.85;
+    filter: blur(0px);
 }
 
 /* ...已有样式... */
@@ -117,7 +199,7 @@ body.scrolled .site-header {
     /* 使用CSS的transform属性来居中 */
     text-align: center;
     /* 文本居中对齐 */
-    color: #ffffff;
+    color: #fff;
     /* 文字颜色，这里使用白色作为例子 */
     /* 文字大小 */
     font-weight: bold;
@@ -133,7 +215,8 @@ body.scrolled .site-header {
     background-clip: text;
     background-image: linear-gradient(90deg, #eff964, #0d40d9);
     transition-duration: 1s;
-    /* 标题底部外边距 */
+    margin-bottom: -30px
+        /* 标题底部外边距 */
 }
 
 .cover-image .image-text p {
@@ -182,20 +265,20 @@ body.scrolled .site-header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 130px 150px 80px 150px;
+    padding: 80px 250px 80px 250px;
 }
 
 .article-list {
     flex: 1;
     min-width: 300px;
-    margin-right: 80px;
+    margin-right: 50px;
 }
 
 
 .blog-post {
     background-color: #242424;
     margin-bottom: 45px;
-    border-radius: 20px;
+    border-radius: 18px;
     color: #dbdbdb;
     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 1);
     transition: transform 0.4s ease, box-shadow 0.3s ease;
