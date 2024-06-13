@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    const titles = document.querySelectorAll('.site-title');
+    const titles = document.querySelectorAll('.jesusblue');
     let angle = 90; // 开始角度
 
     // 使用requestAnimationFrame创建平滑的动画效果
@@ -112,3 +112,49 @@ var color = function (element) {
 
 // 使用方法，给定DOM元素ID初始化color函数
 color(document.getElementById('color'));
+// script.js
+// script.js
+document.addEventListener('DOMContentLoaded', function () {
+    // 获取到.site-header元素
+    var siteHeader = document.querySelector('.site-header');
+
+    // 当页面滚动时触发事件
+    window.addEventListener('scroll', function () {
+        // 计算页面滚动的绝对距离
+        var scrollDistance = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollDistance === 0) {
+            // 如果页面滚动到了顶部（或者几乎到顶部），则隐藏header
+            siteHeader.style.top = '-60px'; // 你可以根据header高度设置top值为负值
+        } else {
+            // 如果页面不是在顶部，则显示header
+            siteHeader.style.top = '0';
+        }
+    });
+});
+// JavaScript代码实现樱花飘落效果
+// JavaScript代码，请将它添加到 "JavaScript/js.js" 文件中
+document.addEventListener('DOMContentLoaded', function () {
+    const container = document.querySelector('.cover-image'); // 确保选择器能匹配到正确的元素
+    const sakuraCount = 350; // 设置桜花的总数
+
+    const createSakuras = () => {
+        for (let i = 0; i < sakuraCount; i++) {
+            createSakura();
+        }
+    };
+
+    const createSakura = () => {
+        var sakura = document.createElement('div');
+        sakura.classList.add('flower');
+        sakura.style.left = `${Math.random() * 100}vw`; // 随机X坐标
+        sakura.style.top = '0'; // Y坐标始终从顶部开始
+        sakura.style.width = `${Math.random() * 8 + 7}px`; // 随机宽度
+        sakura.style.animationDuration = `${Math.random() * 8 + 4}s`; // 随机持续时间
+        sakura.style.animationDelay = `-${Math.random() * 10}s`; // 随机延迟
+        container.appendChild(sakura);
+    };
+
+    // 一次性生成所有桜花
+    createSakuras();
+});

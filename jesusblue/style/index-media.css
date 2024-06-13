@@ -1,0 +1,44 @@
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        padding: 10px 25px 10px 25px;
+    }
+
+    .main-content>* {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .site-navigation li:first-child {
+        display: none;
+    }
+
+    .post-title {
+        font-size: 20px;
+    }
+
+    .post-intro {
+        font-size: 14.5px;
+    }
+
+    .cover-image {
+        height: 300px;
+    }
+
+    .cover-image .image-text h1 {
+        font-size: 3.3em;
+    }
+
+    .cover-image .image-text p {
+        font-size: 0.4em;
+    }
+
+    .site-title {
+        display: none;
+    }
+
+    .flower {
+        display: none;
+    }
+}

@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a;
+    user-select: none;
+}
+
+body.scrolled .site-header {
+    top: 0;
+    /* 当滚动时出现 */
+}
+
+/* 基础樱花样式 */
+
+
+/* 定义樱花落下的动画 */
+
+/* 如果你想要多个樱花效果，可以使用多个伪元素，并随机延迟 *
+
+/* 头部样式 */
+.site-header {
+    background-color: #242424;
+    border-bottom: 0.1em solid #666;
+    /* ...其他样式 ... */
+    text-align: center;
+    height: 60px;
+    position: fixed;
+    top: -60px;
+    /* 滚动前隐藏在视图外 */
+    left: 0;
+    right: 0;
+    width: 100%;
+    line-height: 60px;
+    z-index: 1000;
+    transition: top 0.3s;
+    /* 平滑过渡效果 */
+}
+
+.site-title {
+    font-size: 2em;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(90deg, #eff964, #0d40d9);
+    transition-duration: 1s;
+    float: left;
+    margin: 0px 0px 0px 20px;
+    /* 增加动画时长到20s */
+}
+
+.site-navigation {
+    margin-top: 0px;
+}
+
+.site-navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.site-navigation li {
+    margin: 0 10px;
+}
+
+.site-navigation a {
+    color: #dbdbdb;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+.site-navigation a:hover {
+    color: #42b983;
+}
+
+.cover-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* 使用视口高度确保全屏 */
+    background: rgba(0, 0, 0, 0.3);
+    /* 添加半透明背景，根据需要修改 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+    /* 确保图片不超出容器 */
+}
+
+.cover-image .full-size-img {
+    width: 100%;
+    height: 100%;
+    /* 保持图片高度填满容器 */
+    object-fit: cover;
+}
+
+/* ...已有样式... */
+
+/* 封面图内的文字容器 */
+.cover-image .image-text {
+    position: absolute;
+    /* 绝对定位相对于封面图容器 */
+    top: 50%;
+    /* 垂直居中 */
+    left: 50%;
+    /* 水平居中 */
+    transform: translate(-50%, -50%);
+    /* 使用CSS的transform属性来居中 */
+    text-align: center;
+    /* 文本居中对齐 */
+    color: #ffffff;
+    /* 文字颜色，这里使用白色作为例子 */
+    /* 文字大小 */
+    font-weight: bold;
+    /* 文字加粗 */
+    z-index: 10;
+}
+
+/* 如果需要，为标题或段落文本添加更多样式 */
+.cover-image .image-text h1 {
+    font-size: 10em;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(90deg, #eff964, #0d40d9);
+    transition-duration: 1s;
+    /* 标题底部外边距 */
+}
+
+.cover-image .image-text p {
+    font-size: 1.6em;
+    border-radius: 11px;
+    /* 长单词将正确换行 */
+}
+
+/* 樱花样式，定义在CSS文件中 */
+@keyframes fall {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* 定义桜花的样式 */
+.flower {
+    position: absolute;
+    width: 8px;
+    /* 建议根据实际桜花图片调整宽度和高度 */
+    height: 6px;
+    background-color: pink;
+    border-radius: 50%;
+    /* 圆形 */
+    animation: fall linear infinite;
+}
+
+/* 如果需要，为其他元素设置边距或填充 */
+/* 其他样式... */
+/* 主内容区域 */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 130px 150px 80px 150px;
+}
+
+.article-list {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 80px;
+}
+
+
+.blog-post {
+    background-color: #242424;
+    margin-bottom: 45px;
+    border-radius: 20px;
+    color: #dbdbdb;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 1);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+    /* 平滑过渡效果 */
+    overflow: hidden;
+}
+
+.blog-post:hover {
+    box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.6);
+    /* 鼠标悬停时阴影变白且更大 */
+    transform: translateY(-5px);
+    /* 整体向上浮动10px */
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border: none;
+    background: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: transform 0.4s ease;
+}
+
+.blog-post img:hover {
+    transform: scale(1.04) translateY(-12px);
+    /* 放大图片4% */
+    z-index: 10;
+    /* 确保放大的图片在其他元素上方 */
+    position: relative;
+    /* 使z-index属性生效 */
+}
+
+.article-list .blog-post:last-child {
+    margin-bottom: 0;
+}
+
+.post-title {
+    margin: 10px 20px 10px 20px;
+    font-size: 1.5em;
+}
+
+.post-intro {
+    margin: 10px 20px 10px 20px;
+}
+
+.read-more {
+    display: inline-block;
+    text-decoration: none;
+    color: #42b983;
+    border: 2px solid #666;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+    margin: 10px 20px 20px 20px;
+}
+
+.read-more:hover {
+    background-color: #1a1a1a;
+}
+
+
+/* 最新文章标题样式 */
+.latest-posts .post-title {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 16px;
+    /* 文章标题字体大小 */
+}
+
+.latest-posts .post-title:first-child {
+    padding-top: 0;
+}
+
+.latest-posts a {
+    text-decoration: none;
+    color: #42b983;
+    display: block;
+    /* 以块级元素显示，使整个区域可点击 */
+    margin-bottom: 10px;
+}
+
+.latest-posts a:hover {
+    text-decoration: underline;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: #dbdbdb;
+    text-align: center;
+}
+
+/* 头像类，不需要设置 flex: 1; */
+/* 定义.container相对定位，以便包含绝对定位的元素 */
+.author-avatar-change {
+    position: relative;
+    width: 90px;
+    /* 确保尺寸匹配 */
+    height: 90px;
+    margin-left: 10px;
+    /* 确保与宽度相同 */
+}
+
+.author-avatar,
+.author-avatar-hover {
+    width: 100%;
+    /* 与容器相同 */
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.5s;
+    backface-visibility: hidden;
+    /* 隐藏翻转图片的背面 */
+}
+
+.author-avatar {
+    position: relative;
+    /* 默认图片相对定位，可用于z-index堆叠上下文 */
+}
+
+.author-avatar-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+    /* 初始状态旋转至背后 */
+}
+
+.author-avatar-change:hover .author-avatar {
+    transform: rotateY(180deg);
+    /* 鼠标悬浮时翻转到背后 */
+}
+
+.author-avatar-change:hover .author-avatar-hover {
+    transform: rotateY(0);
+    /* 鼠标悬浮时翻转至正面 */
+}
+
+
+.author-description {
+    flex: 1;
+    font-size: 16px;
+    font-weight: bold;
+    /* 确保除了头像外，其他空间都是描述的内容空间 */
+}
+
+.author-description p {
+    color: #42b983;
+}
+
+.author-description div {
+    margin-top: -7px;
+    margin-left: 3px;
+    font-size: 12px;
+}
+
+/* 添加一个类到包裹 <p> 和 <ul> 的 .about-author，以便更精确地控制宽度 */
+.about-author {
+    width: 100%;
+    /* 确保它占满其父容器 */
+    padding: 10px;
+    /* 添加或去除内边距根据设计需求 */
+    box-sizing: border-box;
+}
+
+
+.author-description h3 {
+    margin-bottom: 5px;
+}
+
+.about-description p {
+    margin-bottom: 5px;
+    /* 段落间的间距 */
+}
+
+
+/* 侧边栏样式 */
+/* 侧边栏区域样式 */
+.sidebar {
+    padding: 20px;
+    background-color: rgb(36, 36, 36);
+    box-shadow: 3px 6px 20px 6px rgba(0, 0, 0, 0.6);
+    min-height: 100%;
+    width: 300px;
+    border: 2px solid #42b983;
+    /* 确保侧边栏至少与视口高度相同 */
+}
+
+/* 区隔两段最新文章和关于作者区域 */
+.sidebar section {
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #363636;
+}
+
+.latest-posts h3 {
+    margin-bottom: 10px;
+    color: #dbdbdb;
+}
+
+.latest-posts,
+.about-author {
+    margin-bottom: 30px;
+}
+
+.sidebar h3,
+.latest-posts,
+.about-author {
+    padding: 0;
+    list-style-type: none;
+}
+
+
+/* 尾部样式 */
+.site-footer {
+    font-size: 14px;
+    text-align: center;
+    background-color: #282828;
+    color: #dbdbdb;
+    padding: 30px 10px 30px 10px;
+}
