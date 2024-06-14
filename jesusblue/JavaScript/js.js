@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (scrollDistance === 0) {
             // 如果页面滚动到了顶部（或者几乎到顶部），则隐藏header
-            siteHeader.style.top = '-700px'; // 你可以根据header高度设置top值为负值
+            siteHeader.style.top = '-1000px'; // 你可以根据header高度设置top值为负值
         } else {
             // 如果页面不是在顶部，则显示header
             siteHeader.style.top = '0';
@@ -178,43 +178,58 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
     const button = document.querySelector('.scroll-button');
     const coverImage = document.querySelector('.cover-image');
+    const fullSizeImg = document.querySelector('.full-size-img');
 
-    // 确保图片加载完成后设置滚动函数
-    const img = coverImage.querySelector('img');
-    const checkAndBindScroll = function () {
-        if (img.complete) {
-            // 图片加载完成后定义滚动到图片底部的函数
-            const windowTop = window.pageYOffset || document.documentElement.scrollTop;
-            const coverImageRect = coverImage.getBoundingClientRect();
-            const coverImageTop = coverImageRect.top;
-            const coverImageBottom = coverImageRect.bottom;
-
-            // 判断图片何时到达视窗底部
-            const scrollAmount = coverImageBottom > window.innerHeight ?
-                (coverImageBottom - windowTop) :
-                (coverImageHeightInPx - windowTop);
-
-            scrollCoverImage = function () {
-                window.scrollBy({
-                    top: scrollAmount, // 实际滚动的距离
-                    left: 0,
-                    behavior: 'smooth'
-                });
-            };
-
-            // 绑定点击事件到按钮
-            button.addEventListener('click', scrollCoverImage);
-        } else {
-            // 图片还未加载完成，延迟检查
-            setTimeout(checkAndBindScroll, 100);
-        }
+    const scrollToImageBottom = function () {
+        const imageBottomOffset = fullSizeImg.offsetTop + fullSizeImg.offsetHeight;
+        button.addEventListener('click', function () {
+            window.scrollTo({
+                top: imageBottomOffset,
+                left: 0,
+                behavior: 'smooth'
+            });
+        });
     };
 
-    // 获取图片的高度
-    let coverImageHeightInPx = coverImage.offsetHeight;
-    // 开始检查图片是否加载
-    checkAndBindScroll();
+    scrollToImageBottom();
+
+    // 监听滚动事件来控制按钮的显示
+    window.addEventListener('scroll', function () {
+        const scrollPosition = window.scrollY;
+        const coverImageTop = coverImage.getBoundingClientRect().top;
+        if (scrollPosition >= coverImageTop + coverImage.offsetHeight - window.innerHeight) {
+            button.classList.add('visible');
+        } else {
+            button.classList.remove('visible');
+        }
+    });
 });
-//
-//
-//
+///
+///
+///
+// 在页面加载时执行
+// 设置起始时间为2024年6月5日11分37秒
+document.addEventListener('DOMContentLoaded', function () {
+    function formatTimeUnit(unit) {
+        return unit < 10 ? '0' + unit : unit;
+    }
+
+    function updateTime() {
+        const now = new Date();
+        const timeDifference = now - startTime;
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        // 使用辅助函数formatTimeUnit格式化时间单位
+        const formattedSeconds = formatTimeUnit(seconds);
+        const runtimeText = `${days}天 ${hours}小时 ${minutes}分钟 ${formattedSeconds}秒`;
+
+        document.querySelector('.site-footer p:first-child').textContent = `开站时间：${runtimeText}`;
+    }
+
+    const startTime = new Date('2024-06-05 11:37:00'); // 设定起始时间
+    updateTime(); // 页面加载时运行一次
+    setInterval(updateTime, 1000); // 每秒更新一次运行时间
+});

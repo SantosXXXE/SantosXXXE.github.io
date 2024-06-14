@@ -3,76 +3,57 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Cover Image</title>
+    <title>Click Effect</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        .cover-image {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-            background-image: url('img/field-6574455.jpg');
-            background-size: cover;
-            background-position: center;
+        /* 基础body样式 */
+        body {
+            background-color: #f5f5f5;
         }
 
-        .image-text {
+        /* 点击效果的动画 */
+        .click-effect {
+            display: none;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
+            pointer-events: none;
+            background-color: rgba(0, 123, 255, 0.5);
+            /* 点击效果的颜色，请自定义 */
+            border-radius: 50%;
+            transform: scaleX(0);
+            /* 初始状态没有宽度 */
+            animation: click-effect-animation 0.5s forwards;
         }
 
-        .snowflake {
-            position: absolute;
-            top: -50px;
-            /* 初始位置在视图外 */
-            color: #FFC0CB;
-            /* 樱花粉色 */
-            font-size: 16px;
-            /* 设置基于字体大小的樱花大小 */
-            text-align: center;
-            left: var(--x);
-            /* 使用CSS变量设置水平位置 */
-            animation: var(--name) linear infinite;
-            animation-duration: var(--dur)s;
-            --name: snowflakeKeyframe;
-            /* 默认动画名称 */
-            --dur: 10;
-            /* 默认动画持续时间 */
-        }
-
-        @keyframes snowflakeKeyframe {
-            0% {
-                transform: rotate(0deg) translate(0, 0);
+        @keyframes click-effect-animation {
+            to {
+                transform: scaleX(1);
+                /* 动画结束时，完全展开 */
                 opacity: 0;
-            }
-
-            10% {
-                opacity: 0.8;
-            }
-
-            100% {
-                transform: rotate(360deg) translate(0, 150vh);
-                opacity: 0;
+                /* 动画结束时，完全透明 */
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="cover-image">
-        <img src="img/field-6574455.jpg" class="full-size-img" alt="Cover Image">
-        <div class="image-text">
-            <h1 class="jesusblue">JesusBlue</h1>
-            <p>You can make of your life anything you wish.</p>
-        </div>
-        <div id="sakuraPlaceholder"></div>
-    </div>
-</body>
-<script>
 
-</script>
+    <script src="script.js">
+        document.addEventListener('click', function (event) {
+            // 创建一个点击效果的元素
+            const effect = document.createElement('div');
+            effect.className = 'click-effect';
+            document.body.appendChild(effect);
+
+            // 获取点击位置，设置点击效果元素的位置
+            effect.style.left = `${event.pageX - 10}px`;
+            effect.style.top = `${event.pageY - 10}px`;
+
+            // 动画结束后移除点击效果元素
+            effect.addEventListener('animationend', function () {
+                effect.remove();
+            });
+        });
+    </script>
+</body>
 
 </html>

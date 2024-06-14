@@ -49,34 +49,33 @@ body.scrolled .site-header {
     /* 平滑过渡效果 */
 }
 
-@keyframes floatAnimation {
-
-    0%,
-    100% {
-        bottom: -20px;
-    }
-
-    50% {
-        bottom: -16px;
-
-    }
+.top-image {
+    position: absolute;
+    /* 其他样式 */
+    z-index: -1;
+    animation: cat 1s infinite ease-in-out;
 }
 
 .top-image img {
-    display: block;
-    /* 图片独占一整行 */
-    width: 50px;
-    /* 或者您想要的尺寸 */
-    border: none;
-    /* 移除图片边框 */
-    border-radius: 5px;
-    /* 圆角边框，根据喜好设置 */
-    transition: transform 0.3s ease;
-    /* 平滑过渡效果 */
-    margin: 10px;
-    /* 图片与屏幕边缘的距离 */
+    position: relative;
+    width: 125px;
+    left: 50px;
+    height: auto;
+    cursor: pointer;
 }
 
+@keyframes cat {
+
+    0%,
+    100% {
+        top: 63px;
+    }
+
+    50% {
+        top: 70px;
+
+    }
+}
 
 .scroll-button {
     position: absolute;
@@ -98,30 +97,40 @@ body.scrolled .site-header {
     transition-duration: 1s;
 }
 
-/* 基础樱花样式 */
+@keyframes floatAnimation {
 
+    0%,
+    100% {
+        bottom: -20px;
+    }
 
-/* 定义樱花落下的动画 */
+    50% {
+        bottom: -16px;
 
-/* 如果你想要多个樱花效果，可以使用多个伪元素，并随机延迟 *
+    }
+}
+
 
 /* 头部样式 */
 .site-header {
-    background-color: #242424;
-    border-bottom: 0.1em solid #666;
     /* ...其他样式 ... */
     text-align: center;
     height: 70px;
     position: fixed;
-    top: -700px;
+    top: -1000px;
     /* 滚动前隐藏在视图外 */
     left: 0;
     right: 0;
     width: 100%;
     line-height: 70px;
-    z-index: 1000;
+    z-index: 999;
     transition: top 0.3s;
     /* 平滑过渡效果 */
+}
+
+.header-content {
+    background-color: #242424;
+    border-bottom: 1px solid #42b983;
 }
 
 .site-title {
@@ -134,12 +143,12 @@ body.scrolled .site-header {
     float: left;
     margin: 0px 0px 0px 20px;
     font-family: "myfont";
-    line-height: 75px;
-    /* 增加动画时长到20s */
+    line-height: 70px;
+    margin-top: 5px;
 }
 
 .site-navigation {
-    margin-top: 0px;
+    height: 70px;
 }
 
 .site-navigation ul {
@@ -207,6 +216,27 @@ body.scrolled .site-header {
     z-index: 10;
 }
 
+/* 烟花动画 */
+@keyframes fireworks {
+    0% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+.firework {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* 花火颜色，可以自定义 */
+    animation: fireworks 2s linear;
+}
+
 /* 如果需要，为标题或段落文本添加更多样式 */
 .cover-image .image-text h1 {
     font-size: 10em;
@@ -241,7 +271,7 @@ body.scrolled .site-header {
     }
 
     100% {
-        transform: translateY(110vh) rotate(720deg);
+        transform: translateY(105vh) rotate(720deg);
         opacity: 0;
     }
 }
