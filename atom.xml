@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://valaxy.site/</id>
+    <title>JesusBlue-Blog</title>
+    <updated>2024-07-02T05:43:37.841Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Santos</name>
+        <email>i@valaxy.site</email>
+        <uri>https://valaxy.site</uri>
+    </author>
+    <link rel="alternate" href="https://valaxy.site/"/>
+    <link rel="self" href="https://valaxy.site/atom.xml"/>
+    <subtitle>记录美好生活</subtitle>
+    <logo>https://imgur.la/images/2024/06/28/avatar.jpg</logo>
+    <icon>https://valaxy.site/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2024 © Santos</rights>
+    <entry>
+        <title type="html"><![CDATA[Java学习笔记]]></title>
+        <id>https://valaxy.site/posts/Java</id>
+        <link href="https://valaxy.site/posts/Java"/>
+        <updated>2024-06-30T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h3>Java关键字</h3>
+<ol>
+<li> 定义一个类: <code>class</code></li>
+<li> 创建对象关键字: <code>new</code></li>
+<li> 调用父类成员关键字: <code>super</code></li>
+<li>&amp;nbsp</li>
+</ol>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>Santos</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-07-02T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitHub Page的手动部署]]></title>
+        <id>https://valaxy.site/posts/Deployment</id>
+        <link href="https://valaxy.site/posts/Deployment"/>
+        <updated>2024-06-27T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h1>Manual Deployment</h1>
+<p>要使用<strong>Valaxy</strong>项目的<strong>dist</strong>文件夹在<strong>GitHub</strong>上部署项目，请遵循以下步骤</p>
+<h3>构建项目</h3>
+<p>首先，确保你已经构建</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>Santos</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-06-27T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello, Valaxy!]]></title>
+        <id>https://valaxy.site/posts/hello-valaxy</id>
+        <link href="https://valaxy.site/posts/hello-valaxy"/>
+        <updated>2024-06-26T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>Valaxy</h2>
+<p>Next Generation Static Blog Framework.</p>
+<p>Write your first post!</p>
+<h2>Usage</h2>
+<p>Modify `valaxy</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>Santos</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-06-27T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[My New Blog Post]]></title>
+        <id>https://valaxy.site/posts/test</id>
+        <link href="https://valaxy.site/posts/test"/>
+        <updated>2024-06-26T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>Introduction</h2>
+<p>This is the introduction of my new blog post, where I can write some text.</p>
+<h1></h1>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>Santos</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-06-26T00:00:00.000Z</published>
+    </entry>
+</feed>

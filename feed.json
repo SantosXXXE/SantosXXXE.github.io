@@ -1,0 +1,62 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "JesusBlue-Blog",
+    "home_page_url": "https://valaxy.site/",
+    "feed_url": "https://valaxy.site/feed.json",
+    "description": "记录美好生活",
+    "icon": "https://imgur.la/images/2024/06/28/avatar.jpg",
+    "author": {
+        "name": "Santos",
+        "url": "https://valaxy.site"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<h3>Java关键字</h3>\n<ol>\n<li> 定义一个类: <code>class</code></li>\n<li> 创建对象关键字: <code>new</code></li>\n<li> 调用父类成员关键字: <code>super</code></li>\n<li>&amp;nbsp</li>\n</ol>\n<br/><p>访问 <a href=\"\" target=\"_blank\"></a> 阅读全文。</p>",
+            "url": "https://valaxy.site/posts/Java",
+            "title": "Java学习笔记",
+            "date_modified": "2024-06-30T00:00:00.000Z",
+            "date_published": "2024-07-02T00:00:00.000Z",
+            "author": {
+                "name": "Santos",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h1>Manual Deployment</h1>\n<p>要使用<strong>Valaxy</strong>项目的<strong>dist</strong>文件夹在<strong>GitHub</strong>上部署项目，请遵循以下步骤</p>\n<h3>构建项目</h3>\n<p>首先，确保你已经构建</p>\n<br/><p>访问 <a href=\"\" target=\"_blank\"></a> 阅读全文。</p>",
+            "url": "https://valaxy.site/posts/Deployment",
+            "title": "GitHub Page的手动部署",
+            "date_modified": "2024-06-27T00:00:00.000Z",
+            "date_published": "2024-06-27T00:00:00.000Z",
+            "author": {
+                "name": "Santos",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>Valaxy</h2>\n<p>Next Generation Static Blog Framework.</p>\n<p>Write your first post!</p>\n<h2>Usage</h2>\n<p>Modify `valaxy</p>\n<br/><p>访问 <a href=\"\" target=\"_blank\"></a> 阅读全文。</p>",
+            "url": "https://valaxy.site/posts/hello-valaxy",
+            "title": "Hello, Valaxy!",
+            "date_modified": "2024-06-26T00:00:00.000Z",
+            "date_published": "2024-06-27T00:00:00.000Z",
+            "author": {
+                "name": "Santos",
+                "url": "https://valaxy.site"
+            }
+        },
+        {
+            "id": "",
+            "content_html": "<h2>Introduction</h2>\n<p>This is the introduction of my new blog post, where I can write some text.</p>\n<h1></h1>\n<br/><p>访问 <a href=\"\" target=\"_blank\"></a> 阅读全文。</p>",
+            "url": "https://valaxy.site/posts/test",
+            "title": "My New Blog Post",
+            "date_modified": "2024-06-26T00:00:00.000Z",
+            "date_published": "2024-06-26T00:00:00.000Z",
+            "author": {
+                "name": "Santos",
+                "url": "https://valaxy.site"
+            }
+        }
+    ]
+}

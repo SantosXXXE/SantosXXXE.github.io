@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>JesusBlue-Blog</title>
+        <link>https://valaxy.site/</link>
+        <description>记录美好生活</description>
+        <lastBuildDate>Tue, 02 Jul 2024 05:43:37 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>JesusBlue-Blog</title>
+            <url>https://imgur.la/images/2024/06/28/avatar.jpg</url>
+            <link>https://valaxy.site/</link>
+        </image>
+        <copyright>CC BY-NC-SA 4.0 2024 © Santos</copyright>
+        <atom:link href="https://valaxy.site/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Java学习笔记]]></title>
+            <link>https://valaxy.site/posts/Java</link>
+            <guid>https://valaxy.site/posts/Java</guid>
+            <pubDate>Tue, 02 Jul 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h3>Java关键字</h3>
+<ol>
+<li> 定义一个类: <code>class</code></li>
+<li> 创建对象关键字: <code>new</code></li>
+<li> 调用父类成员关键字: <code>super</code></li>
+<li>&amp;nbsp</li>
+</ol>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Santos)</author>
+        </item>
+        <item>
+            <title><![CDATA[GitHub Page的手动部署]]></title>
+            <link>https://valaxy.site/posts/Deployment</link>
+            <guid>https://valaxy.site/posts/Deployment</guid>
+            <pubDate>Thu, 27 Jun 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>Manual Deployment</h1>
+<p>要使用<strong>Valaxy</strong>项目的<strong>dist</strong>文件夹在<strong>GitHub</strong>上部署项目，请遵循以下步骤</p>
+<h3>构建项目</h3>
+<p>首先，确保你已经构建</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Santos)</author>
+        </item>
+        <item>
+            <title><![CDATA[Hello, Valaxy!]]></title>
+            <link>https://valaxy.site/posts/hello-valaxy</link>
+            <guid>https://valaxy.site/posts/hello-valaxy</guid>
+            <pubDate>Thu, 27 Jun 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Valaxy</h2>
+<p>Next Generation Static Blog Framework.</p>
+<p>Write your first post!</p>
+<h2>Usage</h2>
+<p>Modify `valaxy</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Santos)</author>
+        </item>
+        <item>
+            <title><![CDATA[My New Blog Post]]></title>
+            <link>https://valaxy.site/posts/test</link>
+            <guid>https://valaxy.site/posts/test</guid>
+            <pubDate>Wed, 26 Jun 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Introduction</h2>
+<p>This is the introduction of my new blog post, where I can write some text.</p>
+<h1></h1>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Santos)</author>
+        </item>
+    </channel>
+</rss>
