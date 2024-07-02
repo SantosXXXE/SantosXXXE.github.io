@@ -4,7 +4,7 @@
         <title>JesusBlue-Blog</title>
         <link>https://valaxy.site/</link>
         <description>记录美好生活</description>
-        <lastBuildDate>Tue, 02 Jul 2024 07:21:09 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 02 Jul 2024 11:12:50 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,6 +14,22 @@
         </image>
         <copyright>CC BY-NC-SA 4.0 2024 © Santos</copyright>
         <atom:link href="https://valaxy.site/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[中英文切换文章]]></title>
+            <link>https://valaxy.site/posts/i18l</link>
+            <guid>https://valaxy.site/posts/i18l</guid>
+            <pubDate>Tue, 02 Jul 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h3>你好，世界 {lang=&quot;zh-CN&quot;}</h3>
+<h3>Hello World {lang=&quot;en&quot;}</h3>
+<p>::: zh-CN<br>
+切换中英文</p>
+<p>更多内容：...<br>
+:::</p>
+<p>::: en<br>
+Switch</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Santos)</author>
+        </item>
         <item>
             <title><![CDATA[Java学习笔记]]></title>
             <link>https://valaxy.site/posts/Java</link>
@@ -30,6 +46,20 @@
             <author>i@valaxy.site (Santos)</author>
         </item>
         <item>
+            <title><![CDATA[My New Blog Post]]></title>
+            <link>https://valaxy.site/posts/test</link>
+            <guid>https://valaxy.site/posts/test</guid>
+            <pubDate>Tue, 02 Jul 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>序言 {lang=&quot;zh-CN&quot;}</h2>
+<h2>Introduction {lang=&quot;en&quot;}</h2>
+<p>::: zh-CN<br>
+这是我的新博客的介绍，在这里我可以写一些文字。<br>
+:::<br>
+::</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Santos)</author>
+        </item>
+        <item>
             <title><![CDATA[GitHub Page的手动部署]]></title>
             <link>https://valaxy.site/posts/Deployment</link>
             <guid>https://valaxy.site/posts/Deployment</guid>
@@ -38,30 +68,6 @@
 <p>要使用<strong>Valaxy</strong>项目的<strong>dist</strong>文件夹在<strong>GitHub</strong>上部署项目，请遵循以下步骤</p>
 <h3>构建项目</h3>
 <p>首先，确保你已经构建</p>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
-            <author>i@valaxy.site (Santos)</author>
-        </item>
-        <item>
-            <title><![CDATA[Hello, Valaxy!]]></title>
-            <link>https://valaxy.site/posts/hello-valaxy</link>
-            <guid>https://valaxy.site/posts/hello-valaxy</guid>
-            <pubDate>Thu, 27 Jun 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>Valaxy</h2>
-<p>Next Generation Static Blog Framework.</p>
-<p>Write your first post!</p>
-<h2>Usage</h2>
-<p>Modify `valaxy</p>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
-            <author>i@valaxy.site (Santos)</author>
-        </item>
-        <item>
-            <title><![CDATA[My New Blog Post]]></title>
-            <link>https://valaxy.site/posts/test</link>
-            <guid>https://valaxy.site/posts/test</guid>
-            <pubDate>Wed, 26 Jun 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h2>Introduction</h2>
-<p>This is the introduction of my new blog post, where I can write some text.</p>
-<h1></h1>
 <br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (Santos)</author>
         </item>
