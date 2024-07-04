@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://valaxy.site/</id>
     <title>JesusBlue-Blog</title>
-    <updated>2024-07-02T11:23:50.716Z</updated>
+    <updated>2024-07-04T11:59:51.216Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Santos</name>
@@ -16,25 +16,20 @@
     <icon>https://valaxy.site/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2024 © Santos</rights>
     <entry>
-        <title type="html"><![CDATA[中英文切换文章]]></title>
-        <id>https://valaxy.site/posts/i18l</id>
-        <link href="https://valaxy.site/posts/i18l"/>
-        <updated>2024-06-26T00:00:00.000Z</updated>
-        <content type="html"><![CDATA[<h3>你好，世界 {lang=&quot;zh-CN&quot;}</h3>
-<h3>Hello World {lang=&quot;en&quot;}</h3>
-<p>::: zh-CN<br>
-切换中英文</p>
-<p>更多内容：...<br>
-:::</p>
-<p>::: en<br>
-Switch</p>
+        <title type="html"><![CDATA[Ck1lL]]></title>
+        <id>https://valaxy.site/posts/ckill</id>
+        <link href="https://valaxy.site/posts/ckill"/>
+        <updated>2024-07-04T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h3>如何解除CkilL病毒的自启动</h3>
+<p><strong>了解自启动病毒的危害和预防方法，使用户能够保护自己的计算机和网络环境不受恶意软件的威胁。</strong></p>
+<p><code>Ck1lL</code>是一个采用C++编写的恶意软</p>
 <br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
         <author>
             <name>Santos</name>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2024-07-02T00:00:00.000Z</published>
+        <published>2024-07-04T00:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Java学习笔记]]></title>
@@ -48,6 +43,27 @@ Switch</p>
 <li> 调用父类成员关键字: <code>super</code></li>
 <li>&amp;nbsp</li>
 </ol>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>Santos</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-07-04T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[中英文切换文章]]></title>
+        <id>https://valaxy.site/posts/i18l</id>
+        <link href="https://valaxy.site/posts/i18l"/>
+        <updated>2024-06-26T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h3>你好，世界 {lang=&quot;zh-CN&quot;}</h3>
+<h3>Hello World {lang=&quot;en&quot;}</h3>
+<p>::: zh-CN<br>
+切换中英文</p>
+<p>更多内容：...<br>
+:::</p>
+<p>::: en<br>
+Switch</p>
 <br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
         <author>
             <name>Santos</name>

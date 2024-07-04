@@ -4,7 +4,7 @@
         <title>JesusBlue-Blog</title>
         <link>https://valaxy.site/</link>
         <description>记录美好生活</description>
-        <lastBuildDate>Tue, 02 Jul 2024 11:23:50 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 04 Jul 2024 11:59:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -14,6 +14,32 @@
         </image>
         <copyright>CC BY-NC-SA 4.0 2024 © Santos</copyright>
         <atom:link href="https://valaxy.site/feed.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Ck1lL]]></title>
+            <link>https://valaxy.site/posts/ckill</link>
+            <guid>https://valaxy.site/posts/ckill</guid>
+            <pubDate>Thu, 04 Jul 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h3>如何解除CkilL病毒的自启动</h3>
+<p><strong>了解自启动病毒的危害和预防方法，使用户能够保护自己的计算机和网络环境不受恶意软件的威胁。</strong></p>
+<p><code>Ck1lL</code>是一个采用C++编写的恶意软</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Santos)</author>
+        </item>
+        <item>
+            <title><![CDATA[Java学习笔记]]></title>
+            <link>https://valaxy.site/posts/Java</link>
+            <guid>https://valaxy.site/posts/Java</guid>
+            <pubDate>Thu, 04 Jul 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h3>Java关键字</h3>
+<ol>
+<li> 定义一个类: <code>class</code></li>
+<li> 创建对象关键字: <code>new</code></li>
+<li> 调用父类成员关键字: <code>super</code></li>
+<li>&amp;nbsp</li>
+</ol>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Santos)</author>
+        </item>
         <item>
             <title><![CDATA[中英文切换文章]]></title>
             <link>https://valaxy.site/posts/i18l</link>
@@ -27,21 +53,6 @@
 :::</p>
 <p>::: en<br>
 Switch</p>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
-            <author>i@valaxy.site (Santos)</author>
-        </item>
-        <item>
-            <title><![CDATA[Java学习笔记]]></title>
-            <link>https://valaxy.site/posts/Java</link>
-            <guid>https://valaxy.site/posts/Java</guid>
-            <pubDate>Tue, 02 Jul 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h3>Java关键字</h3>
-<ol>
-<li> 定义一个类: <code>class</code></li>
-<li> 创建对象关键字: <code>new</code></li>
-<li> 调用父类成员关键字: <code>super</code></li>
-<li>&amp;nbsp</li>
-</ol>
 <br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (Santos)</author>
         </item>
