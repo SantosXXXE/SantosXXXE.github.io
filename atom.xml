@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://valaxy.site/</id>
     <title>JesusBlue-Blog</title>
-    <updated>2024-07-04T11:59:51.216Z</updated>
+    <updated>2024-07-05T06:50:19.632Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Santos</name>
@@ -16,20 +16,20 @@
     <icon>https://valaxy.site/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2024 © Santos</rights>
     <entry>
-        <title type="html"><![CDATA[Ck1lL]]></title>
-        <id>https://valaxy.site/posts/ckill</id>
-        <link href="https://valaxy.site/posts/ckill"/>
-        <updated>2024-07-04T00:00:00.000Z</updated>
-        <content type="html"><![CDATA[<h3>如何解除CkilL病毒的自启动</h3>
-<p><strong>了解自启动病毒的危害和预防方法，使用户能够保护自己的计算机和网络环境不受恶意软件的威胁。</strong></p>
-<p><code>Ck1lL</code>是一个采用C++编写的恶意软</p>
+        <title type="html"><![CDATA[captcha]]></title>
+        <id>https://valaxy.site/posts/captcha</id>
+        <link href="https://valaxy.site/posts/captcha"/>
+        <updated>2024-07-05T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h3>生成注册验证码</h3>
+<pre><code class="language-php">class Captcha {
+    public static function create($count = 5) { //这是一个静态方法，用</code></pre>
 <br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
         <author>
             <name>Santos</name>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2024-07-04T00:00:00.000Z</published>
+        <published>2024-07-05T00:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Java学习笔记]]></title>
@@ -43,6 +43,39 @@
 <li> 调用父类成员关键字: <code>super</code></li>
 <li>&amp;nbsp</li>
 </ol>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>Santos</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-07-05T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[utterances]]></title>
+        <id>https://valaxy.site/posts/utterances</id>
+        <link href="https://valaxy.site/posts/utterances"/>
+        <updated>2024-07-05T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h3>utterances 🔮</h3>
+<p>基于 GitHub issue 构建的轻量级<strong>评论小部件</strong></p>
+<p>可以将 GitHub issue用于博客评论、wiki 页面等</p>
+<p>**下面是</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>Santos</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-07-05T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ck1lL]]></title>
+        <id>https://valaxy.site/posts/ckill</id>
+        <link href="https://valaxy.site/posts/ckill"/>
+        <updated>2024-07-04T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h3>如何解除CkilL病毒的自启动</h3>
+<p><strong>了解自启动病毒的危害和预防方法，使用户能够保护自己的计算机和网络环境不受恶意软件的威胁。</strong></p>
+<p><code>Ck1lL</code>是一个采用C++编写的恶意软</p>
 <br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
         <author>
             <name>Santos</name>
