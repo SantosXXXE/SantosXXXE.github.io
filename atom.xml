@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://valaxy.site/</id>
     <title>JesusBlue-Blog</title>
-    <updated>2024-07-05T06:50:19.632Z</updated>
+    <updated>2024-07-06T07:50:21.756Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Santos</name>
@@ -29,7 +29,7 @@
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2024-07-05T00:00:00.000Z</published>
+        <published>2024-07-06T00:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Java学习笔记]]></title>
@@ -49,7 +49,7 @@
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2024-07-05T00:00:00.000Z</published>
+        <published>2024-07-06T00:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[utterances]]></title>
