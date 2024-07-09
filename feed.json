@@ -12,11 +12,11 @@
     "items": [
         {
             "id": "",
-            "content_html": "<h3>生成注册验证码</h3>\n<pre><code class=\"language-php\">class Captcha {\n    public static function create($count = 5) { //这是一个静态方法，用</code></pre>\n<br/><p>访问 <a href=\"\" target=\"_blank\"></a> 阅读全文。</p>",
+            "content_html": "<h3>生成注册验证码</h3>\n<pre><code class=\"language-php\">class Captcha {\n    public static function create() { //这是一个静态方法，用于生成一个由随机字符</code></pre>\n<br/><p>访问 <a href=\"\" target=\"_blank\"></a> 阅读全文。</p>",
             "url": "https://valaxy.site/posts/captcha",
             "title": "captcha",
             "date_modified": "2024-07-05T00:00:00.000Z",
-            "date_published": "2024-07-06T00:00:00.000Z",
+            "date_published": "2024-07-09T00:00:00.000Z",
             "author": {
                 "name": "Santos",
                 "url": "https://valaxy.site"
@@ -28,7 +28,7 @@
             "url": "https://valaxy.site/posts/Java",
             "title": "Java学习笔记",
             "date_modified": "2024-06-30T00:00:00.000Z",
-            "date_published": "2024-07-06T00:00:00.000Z",
+            "date_published": "2024-07-09T00:00:00.000Z",
             "author": {
                 "name": "Santos",
                 "url": "https://valaxy.site"

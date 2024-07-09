@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://valaxy.site/</id>
     <title>JesusBlue-Blog</title>
-    <updated>2024-07-06T07:50:21.756Z</updated>
+    <updated>2024-07-09T05:41:38.003Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Santos</name>
@@ -22,14 +22,14 @@
         <updated>2024-07-05T00:00:00.000Z</updated>
         <content type="html"><![CDATA[<h3>生成注册验证码</h3>
 <pre><code class="language-php">class Captcha {
-    public static function create($count = 5) { //这是一个静态方法，用</code></pre>
+    public static function create() { //这是一个静态方法，用于生成一个由随机字符</code></pre>
 <br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
         <author>
             <name>Santos</name>
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2024-07-06T00:00:00.000Z</published>
+        <published>2024-07-09T00:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Java学习笔记]]></title>
@@ -49,7 +49,7 @@
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2024-07-06T00:00:00.000Z</published>
+        <published>2024-07-09T00:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[utterances]]></title>
