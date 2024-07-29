@@ -4,7 +4,7 @@
         <title>JesusBlue-Blog</title>
         <link>https://valaxy.site/</link>
         <description>记录美好生活</description>
-        <lastBuildDate>Tue, 09 Jul 2024 05:41:37 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 29 Jul 2024 12:55:35 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -15,21 +15,10 @@
         <copyright>CC BY-NC-SA 4.0 2024 © Santos</copyright>
         <atom:link href="https://valaxy.site/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
-            <title><![CDATA[captcha]]></title>
-            <link>https://valaxy.site/posts/captcha</link>
-            <guid>https://valaxy.site/posts/captcha</guid>
-            <pubDate>Tue, 09 Jul 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h3>生成注册验证码</h3>
-<pre><code class="language-php">class Captcha {
-    public static function create() { //这是一个静态方法，用于生成一个由随机字符</code></pre>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
-            <author>i@valaxy.site (Santos)</author>
-        </item>
-        <item>
             <title><![CDATA[Java学习笔记]]></title>
             <link>https://valaxy.site/posts/Java</link>
             <guid>https://valaxy.site/posts/Java</guid>
-            <pubDate>Tue, 09 Jul 2024 00:00:00 GMT</pubDate>
+            <pubDate>Mon, 29 Jul 2024 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h3>Java关键字</h3>
 <ol>
 <li> 定义一个类: <code>class</code></li>
@@ -37,6 +26,17 @@
 <li> 调用父类成员关键字: <code>super</code></li>
 <li>&amp;nbsp</li>
 </ol>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Santos)</author>
+        </item>
+        <item>
+            <title><![CDATA[captcha]]></title>
+            <link>https://valaxy.site/posts/captcha</link>
+            <guid>https://valaxy.site/posts/captcha</guid>
+            <pubDate>Tue, 09 Jul 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h3>生成注册验证码</h3>
+<pre><code class="language-php">class Captcha {
+    public static function create() { //这是一个静态方法，用于生成一个由随机字符</code></pre>
 <br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (Santos)</author>
         </item>

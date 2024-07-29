@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://valaxy.site/</id>
     <title>JesusBlue-Blog</title>
-    <updated>2024-07-09T05:41:38.003Z</updated>
+    <updated>2024-07-29T12:55:35.428Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Santos</name>
@@ -16,22 +16,6 @@
     <icon>https://valaxy.site/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2024 © Santos</rights>
     <entry>
-        <title type="html"><![CDATA[captcha]]></title>
-        <id>https://valaxy.site/posts/captcha</id>
-        <link href="https://valaxy.site/posts/captcha"/>
-        <updated>2024-07-05T00:00:00.000Z</updated>
-        <content type="html"><![CDATA[<h3>生成注册验证码</h3>
-<pre><code class="language-php">class Captcha {
-    public static function create() { //这是一个静态方法，用于生成一个由随机字符</code></pre>
-<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
-        <author>
-            <name>Santos</name>
-            <email>i@valaxy.site</email>
-            <uri>https://valaxy.site</uri>
-        </author>
-        <published>2024-07-09T00:00:00.000Z</published>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Java学习笔记]]></title>
         <id>https://valaxy.site/posts/Java</id>
         <link href="https://valaxy.site/posts/Java"/>
@@ -43,6 +27,22 @@
 <li> 调用父类成员关键字: <code>super</code></li>
 <li>&amp;nbsp</li>
 </ol>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>Santos</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-07-29T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[captcha]]></title>
+        <id>https://valaxy.site/posts/captcha</id>
+        <link href="https://valaxy.site/posts/captcha"/>
+        <updated>2024-07-05T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h3>生成注册验证码</h3>
+<pre><code class="language-php">class Captcha {
+    public static function create() { //这是一个静态方法，用于生成一个由随机字符</code></pre>
 <br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
         <author>
             <name>Santos</name>
