@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://valaxy.site/</id>
     <title>JesusBlue-Blog</title>
-    <updated>2024-07-29T12:55:35.428Z</updated>
+    <updated>2024-10-15T02:45:32.557Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Santos</name>
@@ -12,9 +12,22 @@
     <link rel="alternate" href="https://valaxy.site/"/>
     <link rel="self" href="https://valaxy.site/atom.xml"/>
     <subtitle>记录美好生活</subtitle>
-    <logo>https://imgur.la/images/2024/06/28/avatar.jpg</logo>
+    <logo>https://www.helloimg.com/i/2024/10/15/670dd61ece4be.jpg</logo>
     <icon>https://valaxy.site/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2024 © Santos</rights>
+    <entry>
+        <title type="html"><![CDATA[Dart]]></title>
+        <id>https://valaxy.site/posts/Dart</id>
+        <link href="https://valaxy.site/posts/Dart"/>
+        <updated>2024-10-15T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>Santos</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-10-15T00:00:00.000Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Java学习笔记]]></title>
         <id>https://valaxy.site/posts/Java</id>
