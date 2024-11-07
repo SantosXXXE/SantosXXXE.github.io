@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://valaxy.site/</id>
     <title>JesusBlue-Blog</title>
-    <updated>2024-10-15T03:14:04.565Z</updated>
+    <updated>2024-11-07T11:53:26.786Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Santos</name>
@@ -19,7 +19,7 @@
         <title type="html"><![CDATA[Dart]]></title>
         <id>https://valaxy.site/posts/Dart</id>
         <link href="https://valaxy.site/posts/Dart"/>
-        <updated>2024-10-15T00:00:00.000Z</updated>
+        <updated>2024-10-14T00:00:00.000Z</updated>
         <content type="html"><![CDATA[<h3>Dart 是一个易用、可移植且高效的语言，适用于在全平台开发高质量的应用程序</h3>
 <h2>高易用性</h2>
 <p>为基于事件驱动的用户界面提供成熟且完备的 异步-等待 体系，同时配备了 基于 isolat</p>
@@ -29,7 +29,7 @@
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2024-10-15T00:00:00.000Z</published>
+        <published>2024-11-07T00:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Java学习笔记]]></title>

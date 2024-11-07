@@ -4,7 +4,7 @@
         <title>JesusBlue-Blog</title>
         <link>https://valaxy.site/</link>
         <description>记录美好生活</description>
-        <lastBuildDate>Tue, 15 Oct 2024 03:14:04 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 07 Nov 2024 11:53:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -18,7 +18,7 @@
             <title><![CDATA[Dart]]></title>
             <link>https://valaxy.site/posts/Dart</link>
             <guid>https://valaxy.site/posts/Dart</guid>
-            <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
+            <pubDate>Thu, 07 Nov 2024 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h3>Dart 是一个易用、可移植且高效的语言，适用于在全平台开发高质量的应用程序</h3>
 <h2>高易用性</h2>
 <p>为基于事件驱动的用户界面提供成熟且完备的 异步-等待 体系，同时配备了 基于 isolat</p>
