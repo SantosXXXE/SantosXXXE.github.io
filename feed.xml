@@ -4,7 +4,7 @@
         <title>JesusBlue-Blog</title>
         <link>https://valaxy.site/</link>
         <description>记录美好生活</description>
-        <lastBuildDate>Thu, 07 Nov 2024 11:53:26 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 14 Nov 2024 08:01:41 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -15,10 +15,32 @@
         <copyright>CC BY-NC-SA 4.0 2024 © Santos</copyright>
         <atom:link href="https://valaxy.site/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
+            <title><![CDATA[Flutter]]></title>
+            <link>https://valaxy.site/posts/Flutter</link>
+            <guid>https://valaxy.site/posts/Flutter</guid>
+            <pubDate>Tue, 12 Nov 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h2>Flutter基础中文文档</h2>
+<h4>1. 环境搭建</h4>
+<p>在开始之前，你已了解dart的基础知识并配置了dart，并确保你的开发环境已经安装了Flutter SDK。你可以从[Flutter</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Santos)</author>
+        </item>
+        <item>
+            <title><![CDATA[Flutter Distributor]]></title>
+            <link>https://valaxy.site/posts/FlutterDistributor</link>
+            <guid>https://valaxy.site/posts/FlutterDistributor</guid>
+            <pubDate>Tue, 12 Nov 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h3>使用 Flutter Distributor 打包成exe文件</h3>
+<h2>开始</h2>
+<p>Flutter Distributor 是一款全能的 Flutter 应用打包和发布工具，为您提供一站式解决</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Santos)</author>
+        </item>
+        <item>
             <title><![CDATA[Dart]]></title>
             <link>https://valaxy.site/posts/Dart</link>
             <guid>https://valaxy.site/posts/Dart</guid>
-            <pubDate>Thu, 07 Nov 2024 00:00:00 GMT</pubDate>
+            <pubDate>Fri, 01 Nov 2024 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h3>Dart 是一个易用、可移植且高效的语言，适用于在全平台开发高质量的应用程序</h3>
 <h2>高易用性</h2>
 <p>为基于事件驱动的用户界面提供成熟且完备的 异步-等待 体系，同时配备了 基于 isolat</p>

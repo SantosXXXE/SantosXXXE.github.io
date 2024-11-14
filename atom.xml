@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://valaxy.site/</id>
     <title>JesusBlue-Blog</title>
-    <updated>2024-11-07T11:53:26.786Z</updated>
+    <updated>2024-11-14T08:01:41.706Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Santos</name>
@@ -15,6 +15,38 @@
     <logo>https://www.helloimg.com/i/2024/10/15/670dd61ece4be.jpg</logo>
     <icon>https://valaxy.site/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2024 © Santos</rights>
+    <entry>
+        <title type="html"><![CDATA[Flutter]]></title>
+        <id>https://valaxy.site/posts/Flutter</id>
+        <link href="https://valaxy.site/posts/Flutter"/>
+        <updated>2024-11-06T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>Flutter基础中文文档</h2>
+<h4>1. 环境搭建</h4>
+<p>在开始之前，你已了解dart的基础知识并配置了dart，并确保你的开发环境已经安装了Flutter SDK。你可以从[Flutter</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>Santos</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-11-12T00:00:00.000Z</published>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Flutter Distributor]]></title>
+        <id>https://valaxy.site/posts/FlutterDistributor</id>
+        <link href="https://valaxy.site/posts/FlutterDistributor"/>
+        <updated>2024-11-10T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h3>使用 Flutter Distributor 打包成exe文件</h3>
+<h2>开始</h2>
+<p>Flutter Distributor 是一款全能的 Flutter 应用打包和发布工具，为您提供一站式解决</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content>
+        <author>
+            <name>Santos</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2024-11-12T00:00:00.000Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Dart]]></title>
         <id>https://valaxy.site/posts/Dart</id>
@@ -29,7 +61,7 @@
             <email>i@valaxy.site</email>
             <uri>https://valaxy.site</uri>
         </author>
-        <published>2024-11-07T00:00:00.000Z</published>
+        <published>2024-11-01T00:00:00.000Z</published>
     </entry>
     <entry>
         <title type="html"><![CDATA[Java学习笔记]]></title>
