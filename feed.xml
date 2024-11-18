@@ -4,7 +4,7 @@
         <title>JesusBlue-Blog</title>
         <link>https://valaxy.site/</link>
         <description>记录美好生活</description>
-        <lastBuildDate>Thu, 14 Nov 2024 08:01:41 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 18 Nov 2024 13:21:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -15,10 +15,21 @@
         <copyright>CC BY-NC-SA 4.0 2024 © Santos</copyright>
         <atom:link href="https://valaxy.site/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
+            <title><![CDATA[Flame]]></title>
+            <link>https://valaxy.site/posts/Flame</link>
+            <guid>https://valaxy.site/posts/Flame</guid>
+            <pubDate>Mon, 18 Nov 2024 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[<h1>如何用flutter框架与Flame引擎打造全平台游戏</h1>
+<h2>前言</h2>
+<p>最近在写题的时候遇到一个棘手的问题，如何用dart语言快速开发一个2d平面游戏，查询许多资料后才发现官方有这样的一个游戏引擎</p>
+<br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
+            <author>i@valaxy.site (Santos)</author>
+        </item>
+        <item>
             <title><![CDATA[Flutter]]></title>
             <link>https://valaxy.site/posts/Flutter</link>
             <guid>https://valaxy.site/posts/Flutter</guid>
-            <pubDate>Tue, 12 Nov 2024 00:00:00 GMT</pubDate>
+            <pubDate>Sun, 17 Nov 2024 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<h2>Flutter基础中文文档</h2>
 <h4>1. 环境搭建</h4>
 <p>在开始之前，你已了解dart的基础知识并配置了dart，并确保你的开发环境已经安装了Flutter SDK。你可以从[Flutter</p>
@@ -30,9 +41,9 @@
             <link>https://valaxy.site/posts/FlutterDistributor</link>
             <guid>https://valaxy.site/posts/FlutterDistributor</guid>
             <pubDate>Tue, 12 Nov 2024 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[<h3>使用 Flutter Distributor 打包成exe文件</h3>
-<h2>开始</h2>
-<p>Flutter Distributor 是一款全能的 Flutter 应用打包和发布工具，为您提供一站式解决</p>
+            <content:encoded><![CDATA[<h1>如何使用 Flutter Distributor 把flutter项目打包成exe文件</h1>
+<h4>前言</h4>
+<p>Flutter Distributor 是一款全能的 Flutter 应用打包和发布</p>
 <br/><p>访问 <a href="" target="_blank"></a> 阅读全文。</p>]]></content:encoded>
             <author>i@valaxy.site (Santos)</author>
         </item>
