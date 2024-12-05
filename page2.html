@@ -4,32 +4,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>scroll follow sticky</title>
+    <title>page 2</title>
     <script src="https://unpkg.com/lenis@1.1.16/dist/lenis.min.js"></script>
+
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-size: 2vmin;
-        }
-
-        body {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            background-color: rgb(23, 23, 23);
-        }
-
         a {
             text-decoration: none;
         }
 
-        .sp {
-            margin-top: 1.25rem;
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: 2vmin;
         }
 
-        .ps {
-            margin-bottom: 1.25rem !important;
+        div {
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(23, 23, 23);
+        }
+
+        .title {
+            align-self: center;
+            font-family: sans-serif;
+            font-size: 10rem;
+            color: rgb(0, 124, 247);
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        .title span {
+            font-size: 10rem;
+            color: #f7f7f7;
+        }
+
+        .loading {
+            display: flex;
+            position: fixed;
+            flex-direction: column;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #f7f7f7;
+            z-index: 100000000;
+            transition: 1s ease;
+        }
+
+        .loading svg {
+            width: 5rem;
+            margin-bottom: 2rem;
+            overflow: visible;
+            transition: 0.3s ease;
+        }
+
+        .loading svg circle {
+            fill: none;
+            stroke: #3855e8;
+            stroke-width: 12;
+            stroke-dasharray: 160;
+            stroke-dashoffset: 160;
+            transform-origin: center;
+            animation: circle_rotate 3s ease-in infinite;
+        }
+
+        @keyframes circle_rotate {
+            0% {
+                transform: rotate(0deg);
+                stroke-dashoffset: 160;
+            }
+
+            100% {
+                transform: rotate(360deg);
+                stroke-dashoffset: -160;
+            }
+        }
+
+        .loading p {
+            font-family: sans-serif;
+            font-size: 2rem;
+            color: rgb(23, 23, 23);
+            font-weight: 900;
+            transition: 0.3s ease;
+        }
+
+        .loading_out {
+            transform: translateY(100%);
+        }
+
+        .loading_out svg,
+        .loading_out p {
+            opacity: 0;
+        }
+
+        ::-webkit-scrollbar {
+            width: 4px;
+            background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background-color: rgb(23, 23, 23);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+            background-color: #3855e8;
+        }
+
+
+        .background {
+            width: 100%;
+            display: flex;
+            height: 100vh;
         }
 
         .empty {
@@ -41,7 +136,7 @@
             height: 22.5rem;
             font-family: sans-serif;
             font-size: 2rem;
-            color: rgb(23, 23, 23);
+            color: #f7f7f7;
             font-weight: bold;
             text-transform: uppercase;
             margin-bottom: 2.5rem;
@@ -95,27 +190,22 @@
             margin-bottom: 2rem;
             opacity: 0.2;
         }
-
-        ::-webkit-scrollbar {
-            width: 4px;
-            background-color: transparent;
-        }
-
-        ::-webkit-scrollbar-track {
-            border-radius: 10px;
-            background-color: rgb(23, 23, 23);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            border-radius: 10px;
-            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-            background-color: #3855e8;
-        }
     </style>
 </head>
 
 <body>
-    <div class="empty sp"><a href="http://localhost:999/" class="empty sp">return</a></div>
+    <div class="loading">
+        <svg viewbox='0 0 50 50'>
+            <circle r='25' cx='25' cy='25'></circle>
+        </svg>
+        <p>LOADING</p>
+    </div>
+    <div class="background">
+        <p onclick="loading.in('http:/999-blog.pro/page1.html')" class="title">PAGE <span>2</span>
+
+        </p>
+    </div>
+    <div class="empty">keep scroll</div>
     <div class="empty"> keep scroll</div>
     <div class="empty"> keep scroll</div>
     <div class="container">
@@ -188,10 +278,26 @@
         </div>
     </div>
     <div class="empty"> keep scroll</div>
-    <div class="empty"> keep scroll</div>
-    <div class="empty ps"><a class="empty ps" href="page1.html">NEXT LEVEL</a></div>
+    <div class="empty" style="color: rgb(23, 23, 23);font-size: 8rem" onclick="loading.in('http:/999-blog.pro/')">page
+        <span style="color: #f7f7f7;font-size: 8rem;">0</span>
+    </div>
 </body>
 <script>
+    const loading = {
+        container: document.querySelector(".loading"),
+        in(target) {
+            this.container.classList.remove("loading_out");
+            setTimeout(() => {
+                window.location.href = target;
+            }, 1000)
+        },
+        out() {
+            this.container.classList.add("loading_out");
+        }
+    };
+    window.addEventListener("load", () => {
+        loading.out();
+    })
     const sf = {
         container: document.querySelector(".container"),
         target: document.querySelector(".container_box"),
