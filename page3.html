@@ -43,7 +43,7 @@
 
     .faulttext_fault::after,
     .faulttext_fault::before {
-        content: "PAGE";
+        content: "VENOM";
         position: absolute;
         left: 0;
         top: 0;
@@ -51,23 +51,24 @@
     }
 
     .faulttext_fault::after {
-        color: #ff0000;
+        color: #cd0101;
         transform: translateX(2%);
     }
 
     .faulttext_fault::before {
-        color: #0000ff;
+        color: #0000d7;
         transform: translateX(-2%);
     }
 </style>
 
 <body>
     <div class="container" onclick="faulttext.fault()">
-        <p class="faulttext">PAGE</p>
-        <p class="faulttext">PAGE</p>
-        <p class="faulttext">PAGE</p>
-        <p class="faulttext">PAGE</p>
-
+        <p class="faulttext">VENOM</p>
+        <p class="faulttext">VENOM</p>
+        <p class="faulttext">VENOM</p>
+        <p class="faulttext">VENOM</p>
+        <p class="faulttext">VENOM</p>
+        <p class="faulttext">VENOM</p>
     </div>
 </body>
 <script>
@@ -86,7 +87,7 @@
                     text.style.transform = '';
                     text.style.clipPath = '';
                 });
-            }, 1000)
+            }, 500)
             this.player = setInterval(() => {
                 this.texts.forEach((text) => {
                     text.classList.add("faulttext_fault");
@@ -97,7 +98,7 @@
                     let w = Math.random() * 50 + 10;
                     text.style.clipPath = `polygon(${x}% ${y}%, ${x + w}% ${y}%, ${x + w}% ${y + h}%, ${x}% ${y + h}%)`
                 })
-            }, 30);
+            }, 10);
         }
     };
     faulttext.init();

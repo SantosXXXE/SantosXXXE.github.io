@@ -1,0 +1,36 @@
+import{_ as s,c as e,j as t,a as l,G as p,a2 as r,B as c,o as d}from"./chunks/framework.CqvaAnBq.js";const x=JSON.parse('{"title":"Brainfuck一种极小化的计算机语言","description":"","frontmatter":{"lastUpdated":"2024-12-12T00:00:00.000Z"},"headers":[],"relativePath":"BrainFuck.md","filePath":"BrainFuck.md","lastUpdated":1733961600000}'),i={name:"BrainFuck.md"};function o(h,a,u,g,b,k){const n=c("ArticleMetadata");return d(),e("div",null,[a[0]||(a[0]=t("h1",{id:"brainfuck一种极小化的计算机语言",tabindex:"-1"},[l("Brainfuck一种极小化的计算机语言 "),t("a",{class:"header-anchor",href:"#brainfuck一种极小化的计算机语言","aria-label":'Permalink to "Brainfuck一种极小化的计算机语言"'},"​")],-1)),p(n),a[1]||(a[1]=r(`<h2 id="brainfuck介绍" tabindex="-1">Brainfuck介绍 <a class="header-anchor" href="#brainfuck介绍" aria-label="Permalink to &quot;Brainfuck介绍&quot;">​</a></h2><p>它是由<code>Urban Müller</code>在1993年创建的。<br><code>Müller</code>的目标是建立一种简单的、可以用最小的编译器来实现的、符合图灵完全思想的编程语言。这种语言由八种状态构成，为<code>Amiga</code>机器编写的编译器（第二版）只有240个字节大小。</p><p>就象它的名字所暗示的，<code>brainfuck</code>程序很难读懂。尽管如此，<code>brainfuck</code>图灵机一样可以完成任何计算任务。虽然<code>brainfuck</code>的计算方式如此与众不同，但它确实能够正确运行。</p><p>这种语言基于一个简单的机器模型，除了指令，这个机器还包括：一个以字节为单位、被初始化为零的数组、一个指向该数组的指针（初始时指向数组的第一个字节）、以及用于输入输出的两个字节流。</p><p>这种语言，是一种按照<code>Turing complete（图灵完备</code>思想设计的语言，它的主要设计思路是：用最小的概念实现一种极简的语言，<code>BrainFuck</code>语言只有八种符号，所有的操作都由这八种符号的组合 来完成。</p><h2 id="指令" tabindex="-1">指令 <a class="header-anchor" href="#指令" aria-label="Permalink to &quot;指令&quot;">​</a></h2><p>BF只有8种有效字符，其实就是8种指令：</p><table tabindex="0"><thead><tr><th>字符</th><th style="text-align:center;">含义</th></tr></thead><tbody><tr><td>&gt;</td><td style="text-align:center;">指针加一</td></tr><tr><td>&lt;</td><td style="text-align:center;">指针减一</td></tr><tr><td>+</td><td style="text-align:center;">指针指向的字节的值加一</td></tr><tr><td>-</td><td style="text-align:center;">指针指向的字节的值减一</td></tr><tr><td>.</td><td style="text-align:center;">输出指针指向的单元内容（ASCⅡ码）</td></tr><tr><td>，</td><td style="text-align:center;">输入内容到指针指向的单元（ASCⅡ码）</td></tr><tr><td>[</td><td style="text-align:center;">如果指针指向的单元值为零，向后跳转到对应的]指令的次一指令处</td></tr><tr><td>]</td><td style="text-align:center;">如果指针指向的单元值不为零，向前跳转到对应的[指令的次一指令处</td></tr></tbody></table><p><strong>这里的指针都是指向一个8位的整数，即char，加减法的溢出规则也是和char型整数的溢出规则一致。</strong></p><p><strong>纸带是双向的，和图灵机保持一致。</strong></p><h2 id="翻译成c-c" tabindex="-1">翻译成C/C++ <a class="header-anchor" href="#翻译成c-c" aria-label="Permalink to &quot;翻译成C/C++&quot;">​</a></h2><p>BF可以简单的翻译成C/C++语言：</p><table tabindex="0"><thead><tr><th>Brainfuck</th><th style="text-align:center;">C</th></tr></thead><tbody><tr><td>&gt;</td><td style="text-align:center;">++ptr;</td></tr><tr><td>&lt;</td><td style="text-align:center;">--ptr;</td></tr><tr><td>+</td><td style="text-align:center;">++*ptr;</td></tr><tr><td>-</td><td style="text-align:center;">--*ptr;</td></tr><tr><td>.</td><td style="text-align:center;">putchar(*ptr);</td></tr><tr><td>,</td><td style="text-align:center;">*ptr =getch();</td></tr><tr><td>[</td><td style="text-align:center;">while (*ptr) {</td></tr><tr><td>]</td><td style="text-align:center;">}</td></tr></tbody></table><h3 id="当前位置清零" tabindex="-1">当前位置清零 <a class="header-anchor" href="#当前位置清零" aria-label="Permalink to &quot;当前位置清零&quot;">​</a></h3><p><code>[-]</code> 将当前指针的值归零</p><h3 id="之前位置清零" tabindex="-1">之前位置清零 <a class="header-anchor" href="#之前位置清零" aria-label="Permalink to &quot;之前位置清零&quot;">​</a></h3><p><code>[[-]&lt;]</code> 将当前指针以及之前的指针归零</p><h3 id="字符i-o" tabindex="-1">字符I/O <a class="header-anchor" href="#字符i-o" aria-label="Permalink to &quot;字符I/O&quot;">​</a></h3><p><code>,.</code> 从键盘读取一个字符并输出到屏幕上</p><h3 id="简单的循环" tabindex="-1">简单的循环 <a class="header-anchor" href="#简单的循环" aria-label="Permalink to &quot;简单的循环&quot;">​</a></h3><p><code>,[.,]</code> 这是一个连续从键盘读取字符并回显到屏幕上的循环。注意，这里假定0表示输入结束，事实上有些系统并非如此。以-1和&quot;未改变&quot;作为判断依据的程序代码分别是<code>,+[-.,+]</code>和<code>,[.[-],]</code></p><h3 id="指针维护" tabindex="-1">指针维护 <a class="header-anchor" href="#指针维护" aria-label="Permalink to &quot;指针维护&quot;">​</a></h3><p><code>&gt;,[.&gt;,]</code>通过移动指针保存所有的输入，供后面的程序使用。</p><h3 id="加法" tabindex="-1">加法 <a class="header-anchor" href="#加法" aria-label="Permalink to &quot;加法&quot;">​</a></h3><p><code>[-&gt;+&lt;]</code>把当前位置的值加到后面的单元中（破坏性的加，它导致左边的单元被归零）</p><h2 id="打印hello-world" tabindex="-1">打印Hello World! <a class="header-anchor" href="#打印hello-world" aria-label="Permalink to &quot;打印Hello World!&quot;">​</a></h2><p>有了打印一个字符的经验和归0操作，接下来就可以输出任意字符了：</p><p>Ascii码分别是72,101,108,108,111,32,87,111,114,108,100,33</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>+++++++++</span></span>
+<span class="line"><span>[-&gt;++++++++&lt;]</span></span>
+<span class="line"><span>&gt;.[[-]&lt;]</span></span>
+<span class="line"><span>++++++++++</span></span>
+<span class="line"><span>[-&gt;++++++++++&lt;]</span></span>
+<span class="line"><span>&gt;+.[[-]&lt;]</span></span>
+<span class="line"><span>+++++++++</span></span>
+<span class="line"><span>[-&gt;++++++++++++&lt;]</span></span>
+<span class="line"><span>&gt;.[[-]&lt;]</span></span>
+<span class="line"><span>+++++++++</span></span>
+<span class="line"><span>[-&gt;++++++++++++&lt;]</span></span>
+<span class="line"><span>&gt;.[[-]&lt;]</span></span>
+<span class="line"><span>+++++++++</span></span>
+<span class="line"><span>[-&gt;++++++++++++&lt;]</span></span>
+<span class="line"><span>&gt;+++.[[-]&lt;]</span></span>
+<span class="line"><span>++++++++</span></span>
+<span class="line"><span>[-&gt;++++&lt;]</span></span>
+<span class="line"><span>&gt;.[[-]&lt;]</span></span>
+<span class="line"><span>++++++++</span></span>
+<span class="line"><span>[-&gt;+++++++++++&lt;]</span></span>
+<span class="line"><span>&gt;-.[[-]&lt;]</span></span>
+<span class="line"><span>+++++++++</span></span>
+<span class="line"><span>[-&gt;++++++++++++&lt;]</span></span>
+<span class="line"><span>&gt;+++.[[-]&lt;]</span></span>
+<span class="line"><span>+++++++++</span></span>
+<span class="line"><span>[-&gt;++++++++++++&lt;]</span></span>
+<span class="line"><span>&gt;++++++.[[-]&lt;]</span></span>
+<span class="line"><span>+++++++++</span></span>
+<span class="line"><span>[-&gt;++++++++++++&lt;]</span></span>
+<span class="line"><span>&gt;.[[-]&lt;]</span></span>
+<span class="line"><span>++++++++++</span></span>
+<span class="line"><span>[-&gt;++++++++++&lt;]</span></span>
+<span class="line"><span>&gt;.[[-]&lt;]</span></span>
+<span class="line"><span>++++++++</span></span>
+<span class="line"><span>[-&gt;++++&lt;]</span></span>
+<span class="line"><span>&gt;+.[[-]&lt;]</span></span></code></pre></div><h2 id="brainfuck解释器" tabindex="-1">BrainFuck解释器 <a class="header-anchor" href="#brainfuck解释器" aria-label="Permalink to &quot;BrainFuck解释器&quot;">​</a></h2><p>最后推荐一个好用的BrainFuck加密解密网站<br><code>AmanCTF - Brainfuck/OoK</code>加密解密<br><code>Brainfuck/OoK</code>在线加密解密<br><a href="https://ctf.bugku.com/tool/brainfuck" target="_blank" rel="noreferrer">https://ctf.bugku.com/tool/brainfuck</a></p><p><strong>如果你发现这篇指南有用，或者有改进建议，请随时联系我们或参与讨论。</strong>🎉 🎉 🎉</p>`,32))])}const m=s(i,[["render",o]]);export{x as __pageData,m as default};
